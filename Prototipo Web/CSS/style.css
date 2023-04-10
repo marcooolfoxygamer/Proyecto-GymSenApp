@@ -556,11 +556,16 @@
 /* Configuraciones aplicadas al contenedor que tiene dentro los datos que se tomarán para el registro de asistencia de los aprendices al gimnasio */
 #cont_items_asist{
     border: 4px groove #a5a5a5;
-    width: 75.5%;
+    width: max-content;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+@media (max-width: 1037px) {
+    #cont_items_asist {
+      width: 75.5%;
+    }
 }
 /* Configuraciones aplicadas a los espacios individuales que contienen cada espacio a llenar para registrar la asistencia de los aprendices al gimnasio */
 .items_asist{
