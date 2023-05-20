@@ -404,7 +404,7 @@
 
 /* Estilos y organización aplicada a los datos que llenan los usuarios
     (dandoles espacios más estáticos y además flexibles a las personas que interactuen con los input del sistema) */
-#nombre, #correo_sena_registro, #num_identificacion, #password_registro, #Antecedentes_salud, #correo_sena_iniciosesion, #password_iniciosesion, #correo_sena_Recup_contra{
+#nombre1, #nombre2, #apel1, #apel2,  #correo_sena_registro, #num_identificacion, #password_registro, #Antecedentes_salud, #correo_sena_iniciosesion, #password_iniciosesion, #correo_sena_Recup_contra{
     margin: 0 auto;
     width: 40%;
 }
@@ -416,20 +416,6 @@
 /* Padding que se agrega al input con opciones */
 .form-control.op {
     padding-left: 7px;
-}
-/* Estilos que se agregan a los espacios que permiten la elección de opciones en el formulario de registro */
-#selFicha_formacion{
-    margin: 0 auto;
-    width: 41%;
-    height: 43px;
-    color: #555555;
-}
-/* Color que se le aplica a los elementos inválidos dentro de las opciones de respuesta de la ficha de formación en el registro 
-    (esto con el objetivo de que se diferencie y salga de color claro el título que dice "Seleccione su ficha de formación";
-      para que así, cuando se seleccione la ficha, salga de un color más oscuro y se diferencie visualmente del elemento
-        que le permite a la persona saber qué elegir en ese espacio opcional) */
-#selFicha_formacion:invalid{
-    color: #999;
 }
 
 /* Estilos adicionales que se le aplican a los sibmit del inicio de sesión */
@@ -556,29 +542,28 @@
 /* Configuraciones aplicadas al contenedor que tiene dentro los datos que se tomarán para el registro de asistencia de los aprendices al gimnasio */
 #cont_items_asist{
     border: 4px groove #a5a5a5;
-    width: max-content;
+    width: 75%;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-@media (max-width: 1037px) {
-    #cont_items_asist {
-      width: 75.5%;
-    }
-}
+
 /* Configuraciones aplicadas a los espacios individuales que contienen cada espacio a llenar para registrar la asistencia de los aprendices al gimnasio */
 .items_asist{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 10px;
     text-align: center;
+    width: 230px;
 }
 /* Estilo aplicado al título o nombre que le permite al instructor comprender en cada campo qué se debe colocar para llenar correctamente la asistencia */
 .titulo-asist{
     background: #777777c3;
     color: rgb(255, 243, 226);
+}
+/* Estilo aplicado a las cajas que contienen los input */
+.caja_input{
+    margin: 0px auto;
+    width: 230px;
 }
 /* Estilo aplicado a cada input de la asistencia */
 .formul_sesinic{
@@ -586,6 +571,7 @@
     font-size: 14px;
     color: #555555;
     border: 1px solid #ccc;
+    width: calc(100% - 22px);
 }
 /* Color aplicado a todo dato que digite el instructor a los input para llenar la asistencia */
 .formul_sesinic::-webkit-input-placeholder{
