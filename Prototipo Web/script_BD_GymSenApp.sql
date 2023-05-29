@@ -141,12 +141,7 @@ insert into musculos_ejercicios values
 ("Abdomen","Abdominales"),
 ("Brazo","Levantar pesas");
 
-insert into planificador values
-(NULL,1203984002,"Pierna"),
-(NULL,1203984002,"Abdomen"),
-(NULL,1093498551,"Pierna"),
-(NULL,1093498551,"Pierna"),
-(NULL,1093498551,"Brazo");
+
 
 
 
