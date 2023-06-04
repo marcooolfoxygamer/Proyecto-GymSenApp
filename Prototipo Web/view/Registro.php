@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<?php
+		include("../model/conexion.php");
+	?>
     <div class="navbar">
         <img src="Imagenes/LogoSena.png" class="logo">
         <ul>
@@ -30,7 +33,7 @@
 			</div>
 			<div class="row">
 				<div>
-					<form action="#">
+					<form action="../controller/c_user_registro.php" method="POST">
 						<div class="form-group">
 							<label for="nom1" class="sr-only">Primer nombre</label>
 							<input type="text" class="form-control" placeholder="Primer nombre" id="nom1" name="nom1" required>
@@ -61,15 +64,22 @@
 						</div>
 						<div class="form-group">
                             <label for="selAntecedentes" id="sr-only"></label>
-                            <select name="selAntecedentes" class="form-control op" placeholder="Tiene condicioines médicas que debamos conocer?" id="selAntecedentes" name="selAntecedentes" required>
-                                <option value="" selected="selected" disabled="disabled">Tiene condicioines médicas que debamos conocer?</option>
-								<option value="">Ninguna</option>
-                                <option value="Asma">Asma</option>
-								<option value="Artritis">Artritis</option>
-								<option value="Diabetes">Diabetes</option>
-                                <option value="Enfermedad cardiovascular">Enfermedad cardiovascular</option>
-								<option value="Enfermedad pulmonar">Enfermedad pulmonar</option>
-								<option value="Enfermedad crónica">Enfermedad crónica</option>
+                            <select name="selAntecedentes" class="form-control op" placeholder="Tiene condiciones médicas que debamos conocer?" id="selAntecedentes" name="selAntecedentes" required>
+                                <option value="" selected="selected" disabled="disabled">Tiene condiciones médicas que debamos conocer?</option>
+								<option value='Ninguna'>Ninguna</option>
+								<?php
+									$sql="SELECT * FROM anteced_salud";
+									$query=$conexion->query($sql);
+
+									while($result=$query->fetch_assoc()){
+										$aantecedente=stripslashes($result["antecedente"]);
+
+										if ($result["antecedente"]!="Ninguna"){
+											echo"<option value='$aantecedente'>$aantecedente</option>";
+											
+										}
+									}
+								?>
                             </select>
 						</div>
 						<div class="form-group">

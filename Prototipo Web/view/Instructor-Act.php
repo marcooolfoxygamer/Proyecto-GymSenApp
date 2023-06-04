@@ -1,3 +1,6 @@
+<?php
+    include ("../model/seguridad_instructor.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asistencia</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="navbar">
@@ -14,8 +17,9 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Anuncios.html">Anuncios</a></li>
             <li><a href="Recomendaciones.html">Recomendaciones</a></li>
-            <li><a href="Registro.html">Registrarse</a></li>
-            <li id="liFinLinea"><a href="Inicio_Sesion.html">Iniciar sesión</a></li>
+            <li><a href="Registro.php">Registrarse</a></li>
+            <li><a href="Inicio_Sesion.html">Iniciar sesión</a></li>
+			<li id="liFinLinea"><a href="../model/salir.php">Cerrar Sesion</a></li>
         </ul>
     </div>
     
@@ -32,11 +36,11 @@
 			</div>
 			<div class="row">
 				<div class="cont-r">
-					<form action="#">
+					<form action="../controller/c_asis_registro.php" method="POST">
                         <div id="cont_items_asist">
                             <div class="items_asist">
                                 <div class="titulo-asist">
-                                    <p>Identificación Instructor</p>
+                                    <p>Identificación del Instructor</p>
                                 </div>
                                 <div class="caja_input">
                                     <label for="id_Instructor" class="lab_sesinic"></label>
@@ -45,7 +49,7 @@
                             </div>
                             <div class="items_asist">
                                 <div class="titulo-asist">
-                                    <p>Identificación Aprendiz</p>
+                                    <p>Identificación del Aprendiz</p>
                                 </div>
                                 <div class="caja_input">
                                     <label for="id_Aprendiz" class="lab_sesinic"></label>
@@ -68,7 +72,7 @@
 					</form>
 				</div>
                 <div class="link_asist_db">
-                    <a href="#" class="link-db">Acceder a la base de datos de asistencia de aprendices</a>
+                    <a href="Instructor-Act-ListaAsistencia.php" class="link-db">Acceder a la base de datos de asistencia de aprendices</a>
                 </div>
 			</div>
 		</div>

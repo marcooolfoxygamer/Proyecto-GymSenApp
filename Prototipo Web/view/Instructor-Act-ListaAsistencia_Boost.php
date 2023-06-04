@@ -1,10 +1,13 @@
+<?php
+    include ("../model/seguridad_instructor.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuncios</title>
+    <title>Asistencia</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,42 +18,26 @@
             <li><a href="Anuncios.html">Anuncios</a></li>
             <li><a href="Recomendaciones.html">Recomendaciones</a></li>
             <li><a href="Registro.php">Registrarse</a></li>
-            <li id="liFinLinea"><a href="Inicio_Sesion.html">Iniciar sesión</a></li>
+            <li><a href="Inicio_Sesion.html">Iniciar sesión</a></li>
+			<li id="liFinLinea"><a href="../model/salir.php">Cerrar Sesion</a></li>
         </ul>
     </div>
     
-    <section id="Anuncios">
+    <section id="Asistencia">
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-8 heading">
-					<h1>Anuncios</h1>
-					<p class="sub">En la parte inferior encontrarás anuncios importantes que el gimnasio tiene para ti.</p>
-					<p class="subtle-text">Anuncios</p>
+					<h1>Listado de asistencia</h1>
+					<p class="sub-doub">En este espacio tienes completo acceso a la lista de de aprendices que han desarrollado actividades en el gimnasio</p>
+                    <p class="sub">Puedes actualizar información si así lo requieres...</p>
+					<!-- <p class="subtle-text">Asistencia</p> -->
 				</div>
 			</div>
-			<div class="row team-item gtco-team">
-				<div class="col-md-6">
-					<div class="img-shadow">
-						<img src="Imagenes/cuatro.jpg" class="img-responsive">
-					</div>
-				</div>
-				<div class="col-md-6">
-					<h2 class="heading-colored rowText rowTextH2">Recuerda...</h2>
-        			<p class="rowText">Estamos disponibles de 6am a 8pm (sugeto a cambios).</p>
-				</div>
-			</div>
-			<p style="margin-bottom: 100px;"></p>
-			<div class="row team-item gtco-team">
-				<div class="col-md-6">
-					<div class="img-shadow">
-						<img src="Imagenes/cinco.jpg" class="img-responsive">
-					</div>
-				</div>
-				<div class="col-md-6">
-					<h2 class="heading-colored rowText rowTextH2">Ten en cuenta</h2>
-        			<p class="rowText">Por situaciones adversas, el gimnasio no estará disponible en las mañanas hasta nuevo aviso.</p>
-        			<p class="rowText">Pedimos excusas por esta situación.</p>
-        			<p class="rowText">Gracias.</p>
+			<div class="row">
+				<div class="cont-r">
+                    <?php
+                        include("Instructor-Act-ListaVista.php");
+                    ?>
 				</div>
 			</div>
 		</div>

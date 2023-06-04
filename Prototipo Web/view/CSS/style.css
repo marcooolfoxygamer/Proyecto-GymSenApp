@@ -133,6 +133,7 @@
     font-size: 18px;
     color: #757575;
 }
+
 /* Línea inferior a título y subtitulo heading cada página */
 .heading .sub:after {
     bottom: 0;
@@ -341,7 +342,6 @@
     font-size: 18px;
     color: #757575;
 }
-
 /* Estilo de los textos de fondo de la páginas planificador y asistencia */
 #Planificador .heading .subtle-text, #Asistencia .heading .subtle-text{
     bottom: -1.5em;
@@ -518,6 +518,16 @@
     color: #999;
 }
 
+/* Estilos aplicados al título que describe a qué músculo correponden los ejercicios mostrados */
+#h_text_musc{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+#h_text_musc #texto_musc_ejerc{
+    font-size: 27px;
+    color: #484848;
+}
 /* Configuración aplicada a la caja o espacio que dentro contiene los ejercicios que el aprendiz puede desarrollar según el músculo elegido */
 #cont_Ejercicios{
     display: flex;
@@ -541,7 +551,7 @@
 }
 /* Estilo aplicado al texto que describe los ejericios que el aprendiz puede desarrollar según el músculo elegido */
 .ejercicio-info{
-    padding: 10px;
+    padding: 0 30px 20px 30px;
 }
 /* Estilo específico aplicado al texto que explique los ejercicios que el aprendiz puede desarrollar según el músculo elegido */
 .project-info p{
@@ -550,8 +560,13 @@
 }
 /* Estilo de texto de los títulos dentro de cada opción de ejercicio a desarrollar según el músculo elegido por el aprendiz */
 .ej-inf-p1{
-    font-size: 15px;
+    font-size: 24px;
     color: #7ED321;
+}
+.ej-inf-p2{
+    margin: 15px 0;
+    padding: 0 22px 0 6px;
+    font-size: 16px;
 }
 
 /* Configuraciones aplicadas al contenedor que tiene dentro los datos que se tomarán para el registro de asistencia de los aprendices al gimnasio */
@@ -602,6 +617,10 @@
 /* Color aplicado al link que redirige a la base de datos de asistencia del gimnasio (el cual se aplica para que no se vea de forma normal el link (color azul) sino con el color que representa al sena y a nuestro sistema (verde)) */
 .link-db{
     color: #6ab31d;
+}
+
+#lista_asistencia{
+    font-size: 1px;
 }
 
 /* pie de cada página */
