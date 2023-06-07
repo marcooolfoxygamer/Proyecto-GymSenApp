@@ -10,18 +10,18 @@
     $Antecedentes_input=$_POST["Antecedentes_input"];
     
     if ($nom2=="" || $nom2=="ninguno" || $nom2=="no" || $nom2=="no tengo"){
-        $nom2='NULL';
+        $nom2='';
     }
     if ($apel2=="" || $apel2=="ninguno" || $apel2=="no" || $apel2=="no tengo"){
-        $apel2='NULL';
+        $apel2='';
     }
     if ($Antecedentes_input=="" || $Antecedentes_input=="ninguno" || $Antecedentes_input=="ninguna" || $Antecedentes_input=="no" || $Antecedentes_input=="no tengo"){
-        $Antecedentes_input='NULL';
+        $Antecedentes_input='';
     }
 
     include("../model/m_user.php");
-    $user= new usuario($correo,$pass);
-    $validando=$user->validar_correo();
+    $user= new usuario();
+    $validando=$user->validar_correo($correo,$pass);
 
     if ($validando == 0){
         $user->registrar($nom1,$nom2,$apel1,$apel2,$identificacion,$selAntecedentes,$Antecedentes_input);

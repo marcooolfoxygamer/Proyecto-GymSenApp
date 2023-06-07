@@ -419,7 +419,7 @@
 }
 
 /* Estilos que se agregan a los espacios que permiten la elección de opciones en el formulario de registro */
-#selAntecedentes{
+#selAntecedentes, #selRol{
     margin: 0 auto;
     width: 41%;
     height: 43px;
@@ -429,7 +429,7 @@
     (esto con el objetivo de que se diferencie y salga de color claro el título que dice "Tiene condicioines médicas que debamos conocer?"
       para que así, cuando se seleccione la opcion, salga de un color más oscuro y se diferencie visualmente del elemento
         que le permite a la persona saber qué elegir en ese espacio opcional) */
-#selAntecedentes:invalid{
+#selAntecedentes:invalid, #selRol:invalid{
     color: #999;
 }
 
@@ -619,9 +619,102 @@
     color: #6ab31d;
 }
 
+/* Estilos aplicados al listado de asistencia mostrado en las actividades del instructor */
 #lista_asistencia{
-    font-size: 1px;
+    margin: 0 auto;
+    width: 700px;
+    font-size: 14px;
+    border-collapse: collapse;
 }
+
+
+#lista_asistencia .col{
+    border: 1px solid white;
+    border-bottom-color: #000000;
+}
+#lista_asistencia th, #lista_asistencia td{
+    padding: 14px 6px;
+    text-align: start;
+}
+#lista_asistencia th:nth-child(6), #lista_asistencia th:nth-child(10){
+    text-align: center;
+}
+#lista_asistencia th{
+    padding: 2px 20px 2px 7px;
+}
+#lista_asistencia th:nth-child(6){
+    padding: 2px 8px;
+}
+.tds{
+    border-bottom: 1px solid #9c9c9c;
+}
+.fechasist{
+    padding: 0px;
+}
+.btn{
+    width: 70px;
+    padding: 5px 2px;
+    cursor: pointer;
+    font-size: 11px;
+}
+.btn-update{
+    border: 0px;
+    border-radius: 7px;
+    background-color: rgb(220, 161, 12);
+}
+.btn-delete{
+    border: 0px;
+    border-radius: 7px;
+    background-color: rgb(238, 70, 70);
+}
+
+/* Estilos que permiten al instructor confirmar o denegar la decisión de eliminar un registro de asistencia */
+.overlay {
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+}
+.confirm-box {
+    position:fixed;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+    background: white;
+}
+.confirm-box h2{
+    margin: 30px 0;
+    font-size: 32px;
+}
+.confirm-box p{
+    font-size: 18px;
+}
+.confirm-box button{
+    width: 50px;
+    font-size: 15px;
+    padding: 6px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.confirm-box #confirma{
+    background-color: #89a968;
+}
+.confirm-box #confirma:hover{
+    background-color: #65a124;
+}
+.confirm-box #denega{
+    background-color: rgb(195, 122, 122);
+}
+.confirm-box #denega:hover{
+    background-color: rgb(238, 70, 70);
+}
+
 
 /* pie de cada página */
 #footer {

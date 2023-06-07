@@ -32,10 +32,7 @@
             $sql="UPDATE usuarios SET contrasena = '$pass' WHERE id_user=$identificacion";
             $query=$conexion->query($sql);
 
-			
-
             if($query){
-                // echo "<script>alert('Contraseña actualizada con éxito'); window.location='../model/salir.php';</script>";
                 header("location: ../model/salir.php");
             }
             else{

@@ -5,8 +5,8 @@
         $pass=md5($_POST["pass"]);
     
         include("../model/m_user.php");
-        $user= new usuario($correo,$pass);
-        $validando=$user->validar_correo();
+        $user= new usuario();
+        $validando=$user->validar_correo($correo,$pass);
     
         if ($validando == 0){
             echo "<script>alert('Los datos ingresados no se encuentran registrados dentro del sistema. Por favor, regístrese'); window.location='../view/Registro.php';</script>";

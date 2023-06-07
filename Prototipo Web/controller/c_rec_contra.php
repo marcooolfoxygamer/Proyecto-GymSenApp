@@ -16,8 +16,6 @@
         $id_recup=$_SESSION["id_recup"];
         $pass=md5($_POST["pass"]);
 
-        // echo "<script>alert('el id recup $id_recup, la contraseña nueva $pass')</script>";
-
         include("../model/m_rec_contra.php");
         $user= new usuario();
         $user->actualizar_contrasena($id_recup,$pass);

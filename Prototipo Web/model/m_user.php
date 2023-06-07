@@ -8,14 +8,12 @@
         public $correo;
         public $pass;
 
-        function __construct($correo,$pass){
+        // Validar la existencia de los datos en la base de datos
+        function validar_correo($correo,$pass){
+            include("conexion.php");
+
             $this->correo=$correo;
             $this->pass=$pass;
-        }
-
-        // Validar la existencia de los datos en la base de datos
-        function validar_correo(){
-            include("conexion.php");
 
             $sql="SELECT * FROM usuarios WHERE correo_sena_user='$this->correo'";
             $query=$conexion->query($sql);

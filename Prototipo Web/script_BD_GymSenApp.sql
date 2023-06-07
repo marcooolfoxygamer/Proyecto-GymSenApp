@@ -24,8 +24,8 @@ create table usuarios
   ape2_user varchar(30) null,
   correo_sena_user varchar(80) not null,
   contrasena varchar(80) not null,
-  fk_anteced_salud_sel varchar(80) null,
-  anteced_salud_imp varchar(255) null,
+  fk_anteced_salud_sel varchar(80) not null,
+  anteced_salud_inp varchar(255) null,
   primary key (id_user)
 );
 
@@ -130,7 +130,7 @@ insert into tipos_usuarios (tipo_user) values
 
 insert into anteced_salud values
 ("Asma"),
-("Atritis"),
+("Artritis"),
 ("Diabetes"),
 ("Enfermedad cardiovascular"),
 ("Enfermedad pulmonar"),
@@ -231,7 +231,6 @@ on fk_musculo=musculo
 inner join musculos_ejercicios
 on musculo=pkfk_musculo;
 
-
 -- Edición registros
 
 UPDATE usuarios SET contrasena = 'def678' WHERE id_user = 1203984002 && correo_sena_user = 'mmarin20@soy.sena.edu.co';
@@ -242,7 +241,8 @@ UPDATE usuarios SET contrasena = 'def678' WHERE id_user = 1203984002 && correo_s
 DELETE FROM usuarios WHERE id_user=1203984002;
 
 
+-- Edición de registros de usuarios para cambiar rol dentro del sistema
 
-
+UPDATE usuarios SET fk_tipo_user = 2 WHERE id_user = 1203984002;
 
 

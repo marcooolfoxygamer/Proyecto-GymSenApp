@@ -64,7 +64,7 @@
 						</div>
 						<div class="form-group">
                             <label for="selAntecedentes" id="sr-only"></label>
-                            <select name="selAntecedentes" class="form-control op" placeholder="Tiene condiciones médicas que debamos conocer?" id="selAntecedentes" name="selAntecedentes" required>
+                            <select class="form-control op" placeholder="Tiene condiciones médicas que debamos conocer?" id="selAntecedentes" name="selAntecedentes" required>
                                 <option value="" selected="selected" disabled="disabled">Tiene condiciones médicas que debamos conocer?</option>
 								<option value='Ninguna'>Ninguna</option>
 								<?php
