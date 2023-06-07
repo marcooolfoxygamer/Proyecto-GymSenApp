@@ -1,45 +1,49 @@
+<?php
+    include ("../model/seguridad_rec_contra.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenid@ Instructor(a)</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Recuperación de contraseña</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="navbar">
-        <img src="../Imagenes/LogoSena.png" class="logo">
+        <img src="Imagenes/LogoSena.png" class="logo">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Anuncios.html">Anuncios</a></li>
             <li><a href="Recomendaciones.html">Recomendaciones</a></li>
-            <li><a href="Registro.html">Registrarse</a></li>
+            <li><a href="Registro.php">Registrarse</a></li>
             <li id="liFinLinea"><a href="Inicio_Sesion.html">Iniciar sesión</a></li>
         </ul>
     </div>
     
-    <section id="Apre_Inst">
+    <section id="Recup_contra">
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-8 heading">
-					<h1>Bienvenid@ a tu cuenta instructor</h1>
-					<p class="subtle-text">Bienvenid@</p>
+					<h1>Recuperar contraseña</h1>
+					<p class="sub-doub">Bienvenid@</p>
+					<p class="sub">Por favor, digita la nueva contraseña que con la que asegurarás tu cuenta.</p>
+					<p class="subtle-text">Recuperar contraseña</p>
 				</div>
 			</div>
-			<div class="row team-item gtco-team-reverse">
-				<div class="col-md-6 col-md-push-7">
-					<div class="img-shadow">
-						<img src="../Imagenes/Instructor.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-					</div>
+			<div>
+				<div>
+					<form action="../controller/c_rec_contra.php" method="POST">
+						<div class="form-group">
+							<label for="password_registro" class="sr-only">Nueva contraseña</label>
+							<input type="password" class="form-control ini" placeholder="Nueva contraseña" id="password_registro" maxlength="15" name="pass" required>
+						</div>
+						<div class="form-group-ini" style="margin-top: 3%;">
+							<button type="submit" value="Recuperar_contraseña" class="Subm Recup_contra" id="submit-Recup_contra" name="recuperando_contra">Recuperar contraseña</button>
+						</div>
+					</form>
 				</div>
-				<div class="col-md-6 col-md-pull-6">
-					<h2 class="heading-colored rowText rowTextH2">Mis actividades</h2>
-        			<p class="rowText">Aquí puedes acceder a tus actividades dentro del sistema, selecciona el hipervinculo ubicado aquí debajo.</p>
-					<a href="Instructor-Act.html" class="rowText link-ini-ses">Acceder a mis actividades</a>
-				</div>
-			</div>
-			<p style="margin-bottom: 100px;"></p>
 			</div>
 		</div>
 	</section>

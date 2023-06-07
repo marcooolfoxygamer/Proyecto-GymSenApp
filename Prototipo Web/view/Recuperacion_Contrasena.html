@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperación de contraseña</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="navbar">
@@ -14,7 +14,7 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Anuncios.html">Anuncios</a></li>
             <li><a href="Recomendaciones.html">Recomendaciones</a></li>
-            <li><a href="Registro.html">Registrarse</a></li>
+            <li><a href="Registro.php">Registrarse</a></li>
             <li id="liFinLinea"><a href="Inicio_Sesion.html">Iniciar sesión</a></li>
         </ul>
     </div>
@@ -30,13 +30,17 @@
 			</div>
 			<div>
 				<div>
-					<form action="#">
+					<form action="../controller/c_rec_contra.php" method="POST">
 						<div class="form-group">
 							<label for="correo_sena_Recup_contra" class="sr-only"></label>
-							<input type="email" class="form-control ini" placeholder="Correo electrónico (brindado por el sena y con el que se registró)" id="correo_sena_Recup_contra" required>
+							<input type="email" class="form-control ini" placeholder="Correo electrónico (brindado por el sena y con el que se registró)" id="correo_sena_Recup_contra" name="correo" required>
+						</div>
+						<div class="form-group">
+							<label for="num_identificacion" class="sr-only">Número de identificación</label>
+							<input type="number" class="form-control ini" placeholder="Número de identificación" id="num_identificacion" name="identificacion" required>
 						</div>
 						<div class="form-group-ini" style="margin-top: 3%;">
-							<button value="Recuperar_contraseña" class="Subm Recup_contra" id="submit-Recup_contra">Recuperar contraseña</button>
+							<button type="submit" value="Recuperar_contraseña" class="Subm Recup_contra" id="submit-Recup_contra" name="recuperar_contra">Recuperar contraseña</button>
 						</div>
 					</form>
 				</div>

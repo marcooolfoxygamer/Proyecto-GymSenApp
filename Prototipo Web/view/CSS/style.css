@@ -133,6 +133,7 @@
     font-size: 18px;
     color: #757575;
 }
+
 /* Línea inferior a título y subtitulo heading cada página */
 .heading .sub:after {
     bottom: 0;
@@ -341,7 +342,6 @@
     font-size: 18px;
     color: #757575;
 }
-
 /* Estilo de los textos de fondo de la páginas planificador y asistencia */
 #Planificador .heading .subtle-text, #Asistencia .heading .subtle-text{
     bottom: -1.5em;
@@ -404,18 +404,33 @@
 
 /* Estilos y organización aplicada a los datos que llenan los usuarios
     (dandoles espacios más estáticos y además flexibles a las personas que interactuen con los input del sistema) */
-#nombre1, #nombre2, #apel1, #apel2,  #correo_sena_registro, #num_identificacion, #password_registro, #Antecedentes_salud, #correo_sena_iniciosesion, #password_iniciosesion, #correo_sena_Recup_contra{
+#nom1, #nom2, #apel1, #apel2,  #correo_sena_registro, #num_identificacion, #password_registro, #Antecedentes_input, #correo_sena_iniciosesion, #password_iniciosesion, #correo_sena_Recup_contra{
     margin: 0 auto;
     width: 40%;
 }
 /* Se agrega color más suave al texto que la persona digitará según corresponda */
-#num_identificacion ,#correo_sena_registro, #correo_sena_iniciosesion, #correo_sena_Recup_contra, #Antecedentes_salud{
+#num_identificacion ,#correo_sena_registro, #correo_sena_iniciosesion, #correo_sena_Recup_contra, #Antecedentes_input{
     color: #555555;
 }
 
 /* Padding que se agrega al input con opciones */
 .form-control.op {
     padding-left: 7px;
+}
+
+/* Estilos que se agregan a los espacios que permiten la elección de opciones en el formulario de registro */
+#selAntecedentes, #selRol{
+    margin: 0 auto;
+    width: 41%;
+    height: 43px;
+    color: #555555;
+}
+/* Color que se le aplica a los elementos inválidos dentro de las opciones de respuesta de los antecedentes de salud en el registro 
+    (esto con el objetivo de que se diferencie y salga de color claro el título que dice "Tiene condicioines médicas que debamos conocer?"
+      para que así, cuando se seleccione la opcion, salga de un color más oscuro y se diferencie visualmente del elemento
+        que le permite a la persona saber qué elegir en ese espacio opcional) */
+#selAntecedentes:invalid, #selRol:invalid{
+    color: #999;
 }
 
 /* Estilos adicionales que se le aplican a los sibmit del inicio de sesión */
@@ -503,6 +518,16 @@
     color: #999;
 }
 
+/* Estilos aplicados al título que describe a qué músculo correponden los ejercicios mostrados */
+#h_text_musc{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+#h_text_musc #texto_musc_ejerc{
+    font-size: 27px;
+    color: #484848;
+}
 /* Configuración aplicada a la caja o espacio que dentro contiene los ejercicios que el aprendiz puede desarrollar según el músculo elegido */
 #cont_Ejercicios{
     display: flex;
@@ -526,7 +551,7 @@
 }
 /* Estilo aplicado al texto que describe los ejericios que el aprendiz puede desarrollar según el músculo elegido */
 .ejercicio-info{
-    padding: 10px;
+    padding: 0 30px 20px 30px;
 }
 /* Estilo específico aplicado al texto que explique los ejercicios que el aprendiz puede desarrollar según el músculo elegido */
 .project-info p{
@@ -535,8 +560,13 @@
 }
 /* Estilo de texto de los títulos dentro de cada opción de ejercicio a desarrollar según el músculo elegido por el aprendiz */
 .ej-inf-p1{
-    font-size: 15px;
+    font-size: 24px;
     color: #7ED321;
+}
+.ej-inf-p2{
+    margin: 15px 0;
+    padding: 0 22px 0 6px;
+    font-size: 16px;
 }
 
 /* Configuraciones aplicadas al contenedor que tiene dentro los datos que se tomarán para el registro de asistencia de los aprendices al gimnasio */
@@ -546,14 +576,14 @@
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content:space-around;
 }
 
 /* Configuraciones aplicadas a los espacios individuales que contienen cada espacio a llenar para registrar la asistencia de los aprendices al gimnasio */
 .items_asist{
     margin: 10px;
     text-align: center;
-    width: 230px;
+    width: 280px;
 }
 /* Estilo aplicado al título o nombre que le permite al instructor comprender en cada campo qué se debe colocar para llenar correctamente la asistencia */
 .titulo-asist{
@@ -563,7 +593,7 @@
 /* Estilo aplicado a las cajas que contienen los input */
 .caja_input{
     margin: 0px auto;
-    width: 230px;
+    width:100%;
 }
 /* Estilo aplicado a cada input de la asistencia */
 .formul_sesinic{
@@ -588,6 +618,103 @@
 .link-db{
     color: #6ab31d;
 }
+
+/* Estilos aplicados al listado de asistencia mostrado en las actividades del instructor */
+#lista_asistencia{
+    margin: 0 auto;
+    width: 700px;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+
+#lista_asistencia .col{
+    border: 1px solid white;
+    border-bottom-color: #000000;
+}
+#lista_asistencia th, #lista_asistencia td{
+    padding: 14px 6px;
+    text-align: start;
+}
+#lista_asistencia th:nth-child(6), #lista_asistencia th:nth-child(10){
+    text-align: center;
+}
+#lista_asistencia th{
+    padding: 2px 20px 2px 7px;
+}
+#lista_asistencia th:nth-child(6){
+    padding: 2px 8px;
+}
+.tds{
+    border-bottom: 1px solid #9c9c9c;
+}
+.fechasist{
+    padding: 0px;
+}
+.btn{
+    width: 70px;
+    padding: 5px 2px;
+    cursor: pointer;
+    font-size: 11px;
+}
+.btn-update{
+    border: 0px;
+    border-radius: 7px;
+    background-color: rgb(220, 161, 12);
+}
+.btn-delete{
+    border: 0px;
+    border-radius: 7px;
+    background-color: rgb(238, 70, 70);
+}
+
+/* Estilos que permiten al instructor confirmar o denegar la decisión de eliminar un registro de asistencia */
+.overlay {
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+}
+.confirm-box {
+    position:fixed;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+    background: white;
+}
+.confirm-box h2{
+    margin: 30px 0;
+    font-size: 32px;
+}
+.confirm-box p{
+    font-size: 18px;
+}
+.confirm-box button{
+    width: 50px;
+    font-size: 15px;
+    padding: 6px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.confirm-box #confirma{
+    background-color: #89a968;
+}
+.confirm-box #confirma:hover{
+    background-color: #65a124;
+}
+.confirm-box #denega{
+    background-color: rgb(195, 122, 122);
+}
+.confirm-box #denega:hover{
+    background-color: rgb(238, 70, 70);
+}
+
 
 /* pie de cada página */
 #footer {
