@@ -109,6 +109,7 @@
     line-height: 1.8;
     color: #777;
     background: #fff;
+    min-height: 78vh;
 }
 /* Posición heading cada página del sistema */
 #Anuncios .heading, #Recomendaciones .heading, #Registrarse .heading, #IniciarSesion .heading, #Recup_contra .heading, #Apre_Inst .heading, #Planificador .heading, #Asistencia .heading{
