@@ -434,6 +434,13 @@
     color: #999;
 }
 
+/* Estilos aplicados a los input de tipo numérico dentro del sistema para quitar opciones de incrementar o decrementar el número (dado a que son identificaciones y no se le encuentra uso a la opción) */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 /* Estilos adicionales que se le aplican a los sibmit del inicio de sesión */
 .Subm.inises{
     display: flex;
