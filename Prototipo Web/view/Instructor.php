@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="navbar">
-        <img src="Imagenes/LogoSena.png" class="logo">
+        <img src="Imagenes/Logo_GsA-removebg-preview.png" class="logo">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Anuncios.html">Anuncios</a></li>

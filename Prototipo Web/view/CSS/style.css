@@ -8,25 +8,37 @@
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(41, 41, 41, 0.75),rgba(41, 41, 41, 0.75)), url(../Imagenes/Principal.jpg);
+    background-image: linear-gradient(rgba(230, 230, 230, 0.75),rgba(230, 230, 230, 0.75));
     background-size: cover;
     background-position: center;
+}
+/* isologo GSA en inicio */
+#img-bg-ind{
+    position:relative;
+    display: flex;
+    margin: 40px auto 0 auto;
+    z-index: 6;
+    width: 350px;
 }
 
 /* Barra de Navegación */
 .navbar{
     width: 100%;
     margin: auto;
-    padding: 20px 0;
+    padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #8686869c;
+    background: #eeeeee9c;
+}
+/* Bg color barra navegacion index */
+#nav_ind{
+    background: #d5d5d59c;
 }
 /* Imag Logo */
 .logo{
-    padding-left: 10%;
-    height: 40px;
+    padding-left: 15%;
+    width: 40px;
     cursor: pointer;
 }
 /* Último li de Barra Navegación */
@@ -76,7 +88,7 @@
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    color: white;
+    color: rgb(18, 18, 18);
 }
 /* Titulo inicio */
 .contenido h1{
@@ -85,9 +97,9 @@
 }
 /* Texto subtitulo h3 inicio */
 .contenido h3{
-    margin: 40px auto;
-    font-weight: 100;
-    line-height: 25%;
+    font-weight: bolder;
+    margin: 20px auto;
+    font-size: 22px;
 }
 
 /* Contenedor de la información que corresponde a cada página */
