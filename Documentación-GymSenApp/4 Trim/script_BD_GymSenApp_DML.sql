@@ -232,6 +232,13 @@ on fk_musculo=musculo
 inner join musculos_ejercicios
 on musculo=pkfk_musculo;
 
+-- Subconsulta
+
+select * from usuarios
+where fk_tipo_user=2 AND id_user NOT IN
+  (select fk_id_aprend
+  from planificador);
+
 -- Edición registros
 
 UPDATE usuarios SET fk_tipo_user = 2 WHERE id_user = 1203984002;
