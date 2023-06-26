@@ -3,6 +3,7 @@
 <p align="center">
 	<img src='./web/Images/LogoGsA.png' alt="Logo GymSenApp" width="200px">
 </p>
+
 > **Tu gimnasio sena al alcance de tus manos**
 
 # Documentación importante
