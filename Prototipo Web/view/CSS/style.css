@@ -168,19 +168,45 @@
     z-index: -1;
 }
 
-/* Sombra imágenes de anuncios sistema */
-.img-shadow {
+/* Estilo aplicado al contenedor de las imágenes de anuncios del sistema */
+.cont_img_anunc{
     position: relative;
+    display: flex;
+    width: 90%;
+    height: 350px;
+}
+/* Sombra imágenes de anuncios sistema */
+.img-shadow_anunc {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    /* justify-content: center; */
     background: #7ED321;
     width: 100%;
-    float: left;
+    height: 100%;
+    /* padding: 20px 0 20px 0; */
+
 }
 /* Posición imágenes anuncios según su sombra */
-.img-shadow img {
-    position: relative;
-    top: -20px;
-    left: -20px;
+.img-shadow_anunc img {
+    /* position: relative; */
+    /* top: -20px; */
+    /* left: -20px; */
+    /* background-size: cover; */
+    /* width: 90%; */
+    /* height: 80%; */
 }
+.img-responsive_anunc {
+    /* display: block; */
+    position: relative;
+    /* position: relative; */
+    /* max-width: 100%; */
+    top: -20px; 
+    left: -20px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
 /* Estilo texto de fondo de anuncios */
 #Anuncios .heading .subtle-text {
     top: 0.5em;
@@ -198,21 +224,21 @@
 .heading-colored {
     color: #7ED321;
 }
-/* Espacio sombra imagen cada anuncio */
-.gtco-team-reverse .img-shadow, .gtco-team .img-shadow {
+/* Espacio sombra imagen cada imagen en pantalla de bienvenida a administradores, aprendices e instructores*/
+.gtco-team .img-shadow {
     position: relative;
     background: #7ED321;
     width: 100%;
     float: left;
     margin-bottom: 30px;
 }
-/* Espacio imágenes cada anuncio */
-.gtco-team-reverse .img-shadow img, .gtco-team .img-shadow img {
+/* Espacio imágenes cada imagen en pantalla de bienvenida a administradores, aprendices e instructores*/
+.gtco-team .img-shadow img {
     position: relative;
     top: -20px;
     right: -20px;
 }
-/* Espacio especifico cada imagen de anuncio */
+/* Espacio especifico cada imagen imagen en pantalla de bienvenida a administradores, aprendices e instructores */
 .img-responsive {
     display: block;
     max-width: 100%;
@@ -639,6 +665,9 @@ input[type=number]::-webkit-outer-spin-button {
     color: #6ab31d;
 }
 
+#a-volverAsist{
+    font-size: 15px;
+}
 /* Estilos aplicados al listado de asistencia mostrado en las actividades del instructor */
 #lista_asistencia{
     margin: 0 auto;

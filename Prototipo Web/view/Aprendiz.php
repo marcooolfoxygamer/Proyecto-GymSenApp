@@ -15,7 +15,7 @@
         <img src="Imagenes/Logo_GsA-removebg-preview.png" class="logo">
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="Anuncios.html">Anuncios</a></li>
+            <li><a href="Anuncios.php">Anuncios</a></li>
             <li><a href="Recomendaciones.html">Recomendaciones</a></li>
             <li><a href="Registro.php">Registrarse</a></li>
             <li><a href="Inicio_Sesion.html">Iniciar sesión</a></li>
@@ -31,7 +31,7 @@
 					<p class="subtle-text">Bienvenid@</p>
 				</div>
 			</div>
-			<div class="row team-item gtco-team-reverse">
+			<div class="row team-item gtco-team">
 				<div class="col-md-6 col-md-push-7">
 					<div class="img-shadow">
 						<img src="Imagenes/Aprendiz.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">

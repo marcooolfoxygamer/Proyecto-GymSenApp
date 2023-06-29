@@ -15,9 +15,9 @@
         <img src="Imagenes/Logo_GsA-removebg-preview.png" class="logo">
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="Anuncios.html">Anuncios</a></li>
+            <li><a href="Anuncios.php">Anuncios</a></li>
             <li><a href="Recomendaciones.html">Recomendaciones</a></li>
-            <li><a href="Registro.html">Registrarse</a></li>
+            <li><a href="Registro.php">Registrarse</a></li>
             <li id="liFinLinea"><a href="Inicio_Sesion.html">Iniciar sesión</a></li>
         </ul>
     </div>

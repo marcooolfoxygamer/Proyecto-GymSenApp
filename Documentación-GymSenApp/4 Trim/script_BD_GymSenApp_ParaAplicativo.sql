@@ -26,7 +26,19 @@ create table usuarios
   contrasena varchar(80) not null,
   fk_anteced_salud_sel varchar(80) not null,
   anteced_salud_inp varchar(255) not null,
+  estado_user boolean not null,
   primary key (id_user)
+);
+
+create table anuncios
+(
+  id_anunc integer not null auto_increment,
+  fk_id_admin_anunc bigint not null,
+  titulo_anunc varchar(60) not null,
+  desc_anunc varchar(255) not null,
+  img_anunc varchar(255) not null,
+  estado_anunc boolean not null,
+  primary key (id_anunc)
 );
 
 create table asistencia
@@ -35,6 +47,7 @@ create table asistencia
   id_instruc_asis bigint not null,
   fk_id_aprend_asis bigint not null,
   fecha_asis date not null,
+  estado_asis boolean not null,
   primary key (id_registro_asis)
 );
 
@@ -83,6 +96,14 @@ references anteced_salud(antecedente)
 on UPDATE cascade
 on DELETE cascade;
 
+alter table anuncios
+add constraint
+fk_anuncios_usuarios_admin
+foreign key (fk_id_admin_anunc)
+references usuarios(id_user)
+on UPDATE cascade
+on DELETE cascade;
+
 alter table asistencia
 add constraint
 fk_asistencia_usuarios_apre
@@ -124,6 +145,7 @@ on UPDATE cascade
 on DELETE cascade;
 
 insert into tipos_usuarios (tipo_user) values
+("administrador"),
 ("aprendiz"),
 ("instructor");
 
@@ -135,6 +157,16 @@ insert into anteced_salud values
 ("Enfermedad pulmonar"),
 ("Enfermedad cronica"),
 ("Ninguna");
+
+insert into usuarios values
+(1,1,"Juanito", NULL, "Lopez", "Mesa", "a@soy.sena.edu.co", MD5("123"),'Asma', '', 1),
+(2,2,"Juanito", NULL, "Lopez", "Mesa", "b@soy.sena.edu.co", MD5("123"),'Asma', '', 1),
+(3,3,"Juanito", NULL, "Lopez", "Mesa", "c@soy.sena.edu.co", MD5("123"),'Asma', '', 1);
+
+insert into anuncios values
+(NULL, 1, "Ten en cuenta", "Por situaciones adversas, el gimnasio no estará disponible en las mañanas hasta nuevo aviso. Pedimos excusas por esta situación. Gracias.", "cinco.jpg",1),
+(NULL, 1, "Recuerda...", "Estamos disponibles de 6am a 8pm (sugeto a cambios).", "principal.jpg",1),
+(NULL, 1, "Si", "Estamos disponibles de 6am a 8pm (sugeto a cambios).", "cuatro.jpg",1);
 
 insert into musculos values
 ("Cuadriceps"),

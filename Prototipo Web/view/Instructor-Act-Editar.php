@@ -1,5 +1,6 @@
 <?php
     include ("../model/seguridad_instructor.php");
+	include ("../model/seguridad_asis_edicion.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +20,7 @@
 		<img src="Imagenes/Logo_GsA-removebg-preview.png" class="logo">
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="Anuncios.html">Anuncios</a></li>
+            <li><a href="Anuncios.php">Anuncios</a></li>
             <li><a href="Recomendaciones.html">Recomendaciones</a></li>
             <li><a href="Registro.html">Registrarse</a></li>
             <li><a href="Inicio_Sesion.html">Iniciar sesión</a></li>
@@ -74,6 +75,8 @@
 						</div>
 							<?php
     							echo "<input type='hidden' name='id_registro_asis' value='$iid_registro_asis'>";
+								echo "<input type='hidden' name='id_registro_inst' value='$iid_instruc_asis'>";
+								echo "<input type='hidden' name='id_registro_apre' value='$ffk_id_aprend_asis'>";
 							?>
 						<div class="form-group" style="margin-top: 3%;">
 							<input type="submit" value="Actualizar registro" class="Subm" id="submit-ed">

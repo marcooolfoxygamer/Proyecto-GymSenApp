@@ -26,7 +26,19 @@ create table usuarios
   contrasena varchar(80) not null,
   fk_anteced_salud_sel varchar(80) not null,
   anteced_salud_inp varchar(255) not null,
+  estado_user boolean not null,
   primary key (id_user)
+);
+
+create table anuncios
+(
+  id_anunc integer not null auto_increment,
+  fk_id_admin_anunc bigint not null,
+  titulo_anunc varchar(60) not null,
+  desc_anunc varchar(255) not null,
+  img_anunc varchar(255) not null,
+  estado_anunc boolean not null,
+  primary key (id_anunc)
 );
 
 create table asistencia
@@ -35,6 +47,7 @@ create table asistencia
   id_instruc_asis bigint not null,
   fk_id_aprend_asis bigint not null,
   fecha_asis date not null,
+  estado_asis boolean not null,
   primary key (id_registro_asis)
 );
 
@@ -83,6 +96,14 @@ references anteced_salud(antecedente)
 on UPDATE cascade
 on DELETE cascade;
 
+alter table anuncios
+add constraint
+fk_anuncios_usuarios_admin
+foreign key (fk_id_admin_anunc)
+references usuarios(id_user)
+on UPDATE cascade
+on DELETE cascade;
+
 alter table asistencia
 add constraint
 fk_asistencia_usuarios_apre
@@ -125,6 +146,7 @@ on DELETE cascade;
 
 
 insert into tipos_usuarios (tipo_user) values
+("administrador"),
 ("aprendiz"),
 ("instructor");
 
@@ -138,22 +160,27 @@ insert into anteced_salud values
 ("Ninguna");
 
 insert into usuarios values
-(1093498551,1,"Juanito", NULL, "Lopez", "Mesa", "juan391a@soy.sena.edu.co", "123",'Asma', ''),
-(1203984002,1,"Mariana", NULL, "Marin", "Rojas", "mmarin20@soy.sena.edu.co", "456",'Ninguna', "Operacion de rodilla reciente"),
-(1039294831,2,"Valentina", "Lizeth", "Rodriguez", "Perez", "valentperez03@soy.sena.edu.co", "456", 'Enfermedad cronica',''),
-(1039387284,1,"Lucas", NULL, "Sanchez", "Lopez", "lopluc_22@soy.sena.edu.co", "abc123", 'Ninguna', ''),
-(1034938112,2,"Stefany", "Alexandra", "Moreno", "Hernandez", "stefmhern@soy.sena.edu.co", "s11", 'Diabetes', "Factura de codo"),
-(1043817344,2,"Maria", "Tatiana", "Cubidez", "Rios", "mari_cub01@soy.sena.edu.co", "789", 'Ninguna', '');
+(1093498551,2,"Juanito", NULL, "Lopez", "Mesa", "juan391a@soy.sena.edu.co", "123",'Asma', '', 1),
+(1203984002,2,"Mariana", NULL, "Marin", "Rojas", "mmarin20@soy.sena.edu.co", "456",'Ninguna', "Operacion de rodilla reciente", 1),
+(1039294831,3,"Valentina", "Lizeth", "Rodriguez", "Perez", "valentperez03@soy.sena.edu.co", "456", 'Enfermedad cronica','', 1),
+(1039387284,2,"Lucas", NULL, "Sanchez", "Lopez", "lopluc_22@soy.sena.edu.co", "abc123", 'Ninguna', '', 0),
+(1034938112,3,"Stefany", "Alexandra", "Moreno", "Hernandez", "stefmhern@soy.sena.edu.co", "s11", 'Diabetes', "Factura de codo", 1),
+(1043817344,3,"Maria", "Tatiana", "Cubidez", "Rios", "mari_cub01@soy.sena.edu.co", "789", 'Ninguna', '', 0);
+
+insert into anuncios values
+(NULL, 1, "Ten en cuenta", "Por situaciones adversas, el gimnasio no estará disponible en las mañanas hasta nuevo aviso. Pedimos excusas por esta situación. Gracias.", "cinco.jpg",1),
+(NULL, 1, "Recuerda...", "Estamos disponibles de 6am a 8pm (sugeto a cambios).", "principal.jpg",1),
+(NULL, 1, "Si", "Estamos disponibles de 6am a 8pm (sugeto a cambios).", "cuatro.jpg",1);
 
 insert into asistencia values
-(NULL,1039294831,1203984002,"2022-10-10"),
-(NULL,1039294831,1093498551,"2022-10-18"),
-(NULL,1043817344,1093498551,"2023-02-10"),
-(NULL,1043817344,1039387284,"2023-02-11"),
-(NULL,1039294831,1203984002,"2023-02-12"),
-(NULL,1034938112,1039387284,"2023-02-12"),
-(NULL,1039294831,1203984002,"2023-02-13"),
-(NULL,1039294831,1039387284,"2023-03-10");
+(NULL,1039294831,1203984002,"2022-10-10", 1),
+(NULL,1039294831,1093498551,"2022-10-18", 0),
+(NULL,1043817344,1093498551,"2023-02-10", 1),
+(NULL,1043817344,1039387284,"2023-02-11", 0),
+(NULL,1039294831,1203984002,"2023-02-12", 0),
+(NULL,1034938112,1039387284,"2023-02-12", 1),
+(NULL,1039294831,1203984002,"2023-02-13", 1),
+(NULL,1039294831,1039387284,"2023-03-10", 1);
 
 insert into musculos values
 ("Cuadriceps"),

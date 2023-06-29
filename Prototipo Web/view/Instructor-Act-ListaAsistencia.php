@@ -18,7 +18,7 @@
         <img src="Imagenes/Logo_GsA-removebg-preview.png" class="logo">
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="Anuncios.html">Anuncios</a></li>
+            <li><a href="Anuncios.php">Anuncios</a></li>
             <li><a href="Recomendaciones.html">Recomendaciones</a></li>
             <li><a href="Registro.php">Registrarse</a></li>
             <li><a href="Inicio_Sesion.html">Iniciar sesión</a></li>
@@ -33,6 +33,7 @@
 					<h1>Listado de asistencia</h1>
 					<p class="sub-doub">En este espacio tienes completo acceso a la lista de de aprendices que han desarrollado actividades en el gimnasio</p>
                     <p class="sub">Puedes actualizar información si así lo requieres...</p>
+          <p class="sub-doub"><a href="Instructor-Act.php" class="link-db" id="a-volverAsist">Volver al formulario para registrar asistencias</a></p>
 				</div>
 			</div>
 			<div class="row">
@@ -58,6 +59,7 @@
                   FROM asistencia
                   INNER JOIN usuarios
                   ON fk_id_aprend_asis=id_user
+                  WHERE estado_asis = 1
                   ORDER BY fecha_asis DESC";
 
                   $query=$conexion->query($sql);
@@ -86,7 +88,7 @@
                       <td class='tds'>$aanteced_salud_sel</td>
                       <td class='tds'>$anteced_salud_inp</td>
                       <td class='tds fechasist'>$ffecha_asis</td>
-                      <td class='tds'><a href='Instructor-Act-Editar.php?id=$iid_registro_asis'><button type='button' class='btn btn-update'>Editar</button></a></td>
+                      <td class='tds'><a href='../controller/c_asis_pre_edit.php?id=$iid_registro_asis'><button type='button' class='btn btn-update'>Editar</button></a></td>
                       <td class='tds'><button type='button' class='btn btn-delete' onclick='showConfirmBox()'>Eliminar</button></td>
                       
                       <div class='overlay' id='overlay' hidden>
