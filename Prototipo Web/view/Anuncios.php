@@ -27,7 +27,7 @@
 			<div class="row row-pb-md">
 				<div class="col-md-8 heading">
 					<h1>Anuncios</h1>
-					<p class="sub">En la parte inferior encontrarás anuncios importantes que el gimnasio tiene para ti.</p>
+					<p class="sub">En la parte inferior encontrará anuncios importantes que el gimnasio tiene para usted.</p>
 					<p class="subtle-text">Anuncios</p>
 				</div>
 			</div>

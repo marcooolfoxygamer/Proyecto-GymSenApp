@@ -1,5 +1,5 @@
 <?php
-	include ("../model/seguridad_asis_edicion.php");
+    include ("../model/seguridad_anuncios.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,13 +7,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edición usuarios</title>
+    <title>Edición de anuncio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<?php
 		include("../model/conexion.php");
-		$id_asis=$_GET['id'];
+		$id_anunc=$_GET['id'];
 	?>
     <div class="navbar">
 		<img src="Imagenes/Logo_GsA-removebg-preview.png" class="logo">
@@ -21,60 +21,60 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Anuncios.php">Anuncios</a></li>
             <li><a href="Recomendaciones.html">Recomendaciones</a></li>
-            <li><a href="Instructor.php">Mis actividades</a></li>
+            <li><a href="Administrador.php">Mis actividades</a></li>
 			<li id="liFinLinea"><a href="../model/salir.php">Cerrar Sesion</a></li>
         </ul>
     </div>
     
-    <section id="Registrarse">
+    <section id="Admin_anuncios_edit">
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-8 heading">
 					<h1>Edición</h1>
-					<p class="sub">Edite los datos del registro de asistencia con un par de teclas y clicks</p>
+					<p class="sub">Edite los datos del anuncio con un par de teclas y clicks</p>
 					<p class="subtle-text">Editar</p>
 				</div>
 			</div>
 			<div class="row">
 				<div>
-					<form action="../controller/c_asis_edit.php" method="POST">
+					<form action="../controller/c_anunc_edit.php" method="POST" enctype="multipart/form-data">
 					<?php
-						$sql="SELECT id_registro_asis, id_instruc_asis, fk_id_aprend_asis, fecha_asis
-							  FROM asistencia
-							  WHERE id_registro_asis=$id_asis";
+						$sql="SELECT *
+							  FROM anuncios
+							  WHERE id_anunc=$id_anunc";
 
 						$query=$conexion->query($sql);
 
 						while($result=$query->fetch_assoc()){
-							$iid_registro_asis=stripslashes($result["id_registro_asis"]);
-							$iid_instruc_asis=stripslashes($result["id_instruc_asis"]);
-							$ffk_id_aprend_asis=stripslashes($result["fk_id_aprend_asis"]);
-							$ffecha_asis=stripslashes($result["fecha_asis"]);
-							
+							$iid_anunc=stripslashes($result["id_anunc"]);
+							$ffk_id_admin_anunc=stripslashes($result["fk_id_admin_anunc"]);
+							$ttitulo_anunc=stripslashes($result["titulo_anunc"]);
+							$ddesc_anunc=stripslashes($result["desc_anunc"]);
+							$iimg_anunc=stripslashes($result["img_anunc"]);
 							
 					?>
 						<div class="form-group">
-							<label for="num_identificacion" class="sr-only">Identificación del Instructor</label>
+							<label for="img_anunc" class="sr-only">Imagen del anuncio</label>
 							<?php
-    							echo "<input type='number' class='form-control' placeholder='Identificación del Instructor' id='num_identificacion' name='id_Instructor' value='$iid_instruc_asis' required>";
+    							echo "<input type='file' class='form-control' placeholder='Imagen del anuncio' id='img_anunc' name='img_anunc'>";
 							?>
 						</div>
 						<div class="form-group">
-							<label for="num_identificacion" class="sr-only">Identificación del Aprendiz</label>
+							<label for="titulo_anunc" class="sr-only">Título del anuncio</label>
 							<?php
-    							echo "<input type='number' class='form-control' placeholder='Identificación del Aprendiz' id='num_identificacion' name='id_Aprendiz' value='$ffk_id_aprend_asis' required>";
+    							echo "<input type='text' class='form-control' placeholder='Título del anuncio' id='titulo_anunc' name='titulo_anunc' value='$ttitulo_anunc' required>";
 							?>
 						</div>
 						<div class="form-group">
-							<label for="num_identificacion" class="sr-only">Fecha</label>
+							<label for="desc_anunc" class="sr-only">Descripción del anuncio</label>
 							<?php
-    							echo "<input type='date' class='form-control' placeholder='Fecha' id='num_identificacion' name='fecha' value='$ffecha_asis' required>";
+    							echo "<textarea class='form-control' placeholder='Descripción del anuncio' id='desc_anunc' name='desc_anunc'>$ddesc_anunc</textarea>";
 							?>
 						</div>
 							<?php
-    							echo "<input type='hidden' name='id_registro_asis' value='$iid_registro_asis'>";
-								echo "<input type='hidden' name='id_registro_inst' value='$iid_instruc_asis'>";
-								echo "<input type='hidden' name='id_registro_apre' value='$ffk_id_aprend_asis'>";
+    							echo "<input type='hidden' name='id_anunc' value='$iid_anunc'>";
+								echo "<input type='hidden' name='fk_id_admin_anunc' value='$ffk_id_admin_anunc'>";
+								echo "<input type='hidden' name='iimg_anunc' value='$iimg_anunc'>";
 							?>
 						<div class="form-group" style="margin-top: 3%;">
 							<input type="submit" value="Actualizar registro" class="Subm" id="submit-ed">

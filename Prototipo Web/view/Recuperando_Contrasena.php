@@ -28,7 +28,7 @@
 				<div class="col-md-8 heading">
 					<h1>Recuperar contraseña</h1>
 					<p class="sub-doub">Bienvenid@</p>
-					<p class="sub">Por favor, digita la nueva contraseña que con la que asegurarás tu cuenta.</p>
+					<p class="sub">Por favor, digite la nueva contraseña que con la que asegurará su cuenta.</p>
 					<p class="subtle-text">Recuperar contraseña</p>
 				</div>
 			</div>

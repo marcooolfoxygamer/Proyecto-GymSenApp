@@ -17,8 +17,7 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Anuncios.php">Anuncios</a></li>
             <li><a href="Recomendaciones.html">Recomendaciones</a></li>
-            <li><a href="Registro.php">Registrarse</a></li>
-            <li><a href="Inicio_Sesion.html">Iniciar sesión</a></li>
+            <li><a href="Instructor.php">Mis actividades</a></li>
 			<li id="liFinLinea"><a href="../model/salir.php">Cerrar Sesion</a></li>
         </ul>
     </div>
@@ -28,9 +27,9 @@
 			<div class="row row-pb-md">
 				<div class="col-md-8 heading">
 					<h1>Toma de asistencia</h1>
-					<p class="sub-doub">En este espacio, podrás tomar la asistencia al gimnasio por parte de los aprendices.</p>
-					<p class="sub-doub">Te invitamos a que llenes con ayuda de cada aprendiz el siguiente formulario, en el que se deberán registrar ciertos datos para quedar cada aprendiz registrado como asistente.</p>
-                    <p class="sub">Además, más abajo, tendrás un link con el que podrás acceder a los datos de asistencia de los aprendices.</p>
+					<p class="sub-doub">En este espacio podrá tomar la asistencia al gimnasio por parte de los aprendices.</p>
+					<p class="sub-doub">Le invitamos a que llene con ayuda de cada aprendiz el siguiente formulario, en el que se deberán registrar ciertos datos para quedar cada aprendiz registrado como asistente.</p>
+                    <p class="sub">Además, más abajo tendrá un link con el que podrá acceder a los datos de asistencia de los aprendices.</p>
 					<p class="subtle-text">Asistencia</p>
 				</div>
 			</div>
@@ -72,7 +71,7 @@
 					</form>
 				</div>
                 <div class="link_asist_db">
-                    <a href="Instructor-Act-ListaAsistencia.php" class="link-db">Acceder a la base de datos de asistencia de aprendices</a>
+                    <a href="Instructor-Act-ListaAsistencia.php" class="link-db">Acceder a la lista de asistencia de aprendices</a>
                 </div>
 			</div>
 		</div>

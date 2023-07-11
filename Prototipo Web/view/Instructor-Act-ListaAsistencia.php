@@ -20,8 +20,7 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Anuncios.php">Anuncios</a></li>
             <li><a href="Recomendaciones.html">Recomendaciones</a></li>
-            <li><a href="Registro.php">Registrarse</a></li>
-            <li><a href="Inicio_Sesion.html">Iniciar sesión</a></li>
+            <li><a href="Instructor.php">Mis actividades</a></li>
 			      <li id="liFinLinea"><a href="../model/salir.php">Cerrar Sesion</a></li>
         </ul>
     </div>
@@ -31,9 +30,9 @@
 			<div class="row row-pb-md">
 				<div class="col-md-8 heading">
 					<h1>Listado de asistencia</h1>
-					<p class="sub-doub">En este espacio tienes completo acceso a la lista de de aprendices que han desarrollado actividades en el gimnasio</p>
-                    <p class="sub">Puedes actualizar información si así lo requieres...</p>
-          <p class="sub-doub"><a href="Instructor-Act.php" class="link-db" id="a-volverAsist">Volver al formulario para registrar asistencias</a></p>
+					<p class="sub-doub">En este espacio tiene completo acceso a la lista de aprendices que han desarrollado actividades en el gimnasio</p>
+                    <p class="sub">Puede actualizar información si así lo requiere...</p>
+          <!-- <p class="sub-doub"><a href="Instructor-Act.php" class="link-db" id="a-volverAsist">Volver al formulario para registrar asistencias</a></p> -->
 				</div>
 			</div>
 			<div class="row">
@@ -46,11 +45,11 @@
                 <th class="col">P.nombre aprendiz</th>
                 <th class="col">P.apellido aprendiz</th>
                 <th class="col">S.apellido aprendiz</th>
-                <th class="col">Correo aprendiz</th>
+                <th class="col asist_correo">Correo aprendiz</th>
                 <th class="col">Antecedentes #1</th>
                 <th class="col">Antecedentes #2</th>
                 <th class="col fechasist">Fecha asistencia</th>
-                <th class="col" colspan="2">Acciones</th>
+                <th class="col asist_acciones" colspan="2">Acciones</th>
               </tr>
             </thead>
             <tbody>

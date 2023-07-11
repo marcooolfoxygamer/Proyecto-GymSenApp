@@ -5,11 +5,12 @@
     class usuario{
 
         public $existe;
+        public $existe_correo_edit;
         public $correo;
         public $pass;
         public $existe_verif_id;
 
-        // Validar la existencia de los datos en la base de datos
+        // Validar la existencia de los datos (correo y contraseña) en la base de datos
         function validar_correo($correo,$pass){
             include("conexion.php");
 
@@ -24,6 +25,20 @@
             }
 
             return $this->existe;
+        }
+
+        // Funcion para validar la existencia del correo ingresado dentro de la edición de usuarios, en la base de datos.
+        function validar_correo_edit($correo_sena_user){
+            include("conexion.php");
+
+            $sql="SELECT * FROM usuarios WHERE correo_sena_user='$correo_sena_user' && estado_user=1";
+            $query=$conexion->query($sql);
+
+			while($result=$query->fetch_assoc()){
+			    $this->existe_correo_edit=$this->existe_correo_edit+1;
+            }
+
+            return $this->existe_correo_edit;
         }
 
         // Funcion para registrar clientes
@@ -44,11 +59,11 @@
                     echo "<script>alert('Registro efectuado con éxito'); window.location='../view/Inicio_Sesion.html';</script>";
                 }
                 else{
-                    echo "<script>alert('El registro no se pudo realizar.\\n por favor, intentelo de nuevo'); window.location='../view/Registro.php';</script>";
+                    echo "<script>alert('El registro no se pudo realizar.\\nPor favor, intentelo de nuevo'); window.location='../view/Registro.php';</script>";
                 }
             }
             elseif($this->existe_verif_id == 1){
-                echo "<script>alert('El registro no se pudo realizar porque la identificación ya existe dentro del sistema.\\n por favor, inténtelo de nuevo'); window.location='../view/Registro.php';</script>";
+                echo "<script>alert('El registro no se pudo realizar porque la identificación ya existe dentro del sistema.\\nPor favor, inténtelo de nuevo'); window.location='../view/Registro.php';</script>";
             } 
         }
 
@@ -83,7 +98,7 @@
                 
                 if ($rol==1){
                     $_SESSION["admin"]="1";
-                    header("location: ../view/Admin.php");
+                    header("location: ../view/Administrador.php");
                 }
                 else if ($rol==2){
                     $_SESSION["aprendiz"]="1";
@@ -95,6 +110,23 @@
                 }
 
             }
+        }
+
+        // Función para actualizar los campos editados dentro del formulario de edición de usuarios dentro de la base de datos.
+        function editar($id_user,$fk_tipo_user,$nom1_user,$nom2_user,$ape1_user,$ape2_user,$correo_sena_user,$fk_anteced_salud_sel,$anteced_salud_inp,$estado_user){
+            include("conexion.php");
+
+            $sql_edicion="UPDATE usuarios SET fk_tipo_user=$fk_tipo_user, nom1_user='$nom1_user', nom2_user='$nom2_user', ape1_user='$ape1_user', ape2_user='$ape2_user', correo_sena_user='$correo_sena_user', fk_anteced_salud_sel='$fk_anteced_salud_sel', anteced_salud_inp='$anteced_salud_inp', estado_user=$estado_user WHERE id_user=$id_user";
+            
+            if (mysqli_query($conexion,$sql_edicion)){
+                $_SESSION["user_crud"]="0";
+                echo "<script>alert('Actualización de datos efectuada con éxito'); window.location='../view/Administrador-Act-Users.php';</script>";
+            }
+            else{
+                $_SESSION["user_crud"]="0";
+                echo "<script>alert('No se pudo actualizar la información del registro.\\nPor favor, inténtelo de nuevo'); window.location='../view/Administrador-Act-Users.php';</script>";
+            }
+            
         }
     }
 ?>

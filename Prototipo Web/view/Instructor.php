@@ -17,17 +17,16 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Anuncios.php">Anuncios</a></li>
             <li><a href="Recomendaciones.html">Recomendaciones</a></li>
-            <li><a href="Registro.php">Registrarse</a></li>
-            <li><a href="Inicio_Sesion.html">Iniciar sesión</a></li>
+            <li><a href="Instructor.php">Mis actividades</a></li>
 			<li id="liFinLinea"><a href="../model/salir.php">Cerrar Sesion</a></li>
         </ul>
     </div>
     
-    <section id="Apre_Inst">
+    <section id="Apre_Inst_Admin">
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-8 heading">
-					<h1>Bienvenid@ a tu cuenta instructor</h1>
+					<h1>Bienvenid@ a su cuenta instructor</h1>
 					<p class="subtle-text">Bienvenid@</p>
 				</div>
 			</div>
@@ -39,8 +38,9 @@
 				</div>
 				<div class="col-md-6 col-md-pull-6">
 					<h2 class="heading-colored rowText rowTextH2">Mis actividades</h2>
-        			<p class="rowText">Aquí puedes acceder a tus actividades dentro del sistema, selecciona el hipervinculo ubicado aquí debajo.</p>
-					<a href="Instructor-Act.php" class="rowText link-ini-ses">Acceder a mis actividades</a>
+        			<p class="rowText">Aquí puede acceder a sus actividades dentro del sistema, seleccione lo que desea hacer:</p>
+					<a href="Instructor-Act.php" class="rowText link-ini-ses">Acceder al registro de asistencia</a>
+					<a href="Instructor-Act-ListaAsistencia.php" class="rowText link-ini-ses">Acceder al listado de asistencia</a>
 				</div>
 			</div>
 			<p style="margin-bottom: 100px;"></p>

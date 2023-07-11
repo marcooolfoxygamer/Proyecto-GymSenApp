@@ -145,9 +145,9 @@ on UPDATE cascade
 on DELETE cascade;
 
 insert into tipos_usuarios (tipo_user) values
-("administrador"),
-("aprendiz"),
-("instructor");
+("Administrador"),
+("Aprendiz"),
+("Instructor");
 
 insert into anteced_salud values
 ("Asma"),

@@ -27,7 +27,7 @@
 			<div class="row row-pb-md">
 				<div class="col-md-8 heading">
 					<h1>Registrarse</h1>
-					<p class="sub">Regístrate para obtener todas las funcionalidades que este sistema puede ofrecerte.</p>
+					<p class="sub">Regístrese para obtener todas las funcionalidades que este sistema puede ofrecerle.</p>
 					<p class="subtle-text">Registrarse</p>
 				</div>
 			</div>

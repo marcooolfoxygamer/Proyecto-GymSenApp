@@ -113,7 +113,7 @@
 }
 
 /* Espacios de compartimentos para cada espacio (o página) dentro del sistema */
-#Anuncios, #Recomendaciones, #Registrarse, #IniciarSesion, #Recup_contra, #Apre_Inst, #Planificador, #Asistencia{
+#Anuncios, #Recomendaciones, #Registrarse, #IniciarSesion, #Recup_contra, #Apre_Inst_Admin, #Planificador, #Asistencia, #Admin_anuncios, #Admin_anuncios_edit, #Admin_usuarios, #Admin_usuarios_edit{
     padding: 4em 0;
     clear: both;
     font-weight: 400;
@@ -124,14 +124,14 @@
     min-height: 78vh;
 }
 /* Posición heading cada página del sistema */
-#Anuncios .heading, #Recomendaciones .heading, #Registrarse .heading, #IniciarSesion .heading, #Recup_contra .heading, #Apre_Inst .heading, #Planificador .heading, #Asistencia .heading{
+#Anuncios .heading, #Recomendaciones .heading, #Registrarse .heading, #IniciarSesion .heading, #Recup_contra .heading, #Apre_Inst_Admin .heading, #Planificador .heading, #Asistencia .heading, #Admin_anuncios .heading, #Admin_anuncios_edit .heading, #Admin_usuarios .heading, #Admin_usuarios_edit .heading{
     position: relative;
     text-align: center;
     width: 80%;
     margin: 0 auto;
 }
 /* Estilo correspondiente a cada h1 de las páginas del sistema */
-#Anuncios h1, #Recomendaciones h1, #Registrarse h1, #IniciarSesion h1, #Recup_contra h1, #Apre_Inst h1, #Planificador h1, #Asistencia h1{
+#Anuncios h1, #Recomendaciones h1, #Registrarse h1, #IniciarSesion h1, #Recup_contra h1, #Apre_Inst_Admin h1, #Planificador h1, #Asistencia h1, #Admin_anuncios h1, #Admin_anuncios_edit h1, #Admin_usuarios h1, #Admin_usuarios_edit h1{
     color: #000;
     font-weight: 500;
     margin: 0 0 30px 0;
@@ -186,15 +186,6 @@
     height: 100%;
     /* padding: 20px 0 20px 0; */
 
-}
-/* Posición imágenes anuncios según su sombra */
-.img-shadow_anunc img {
-    /* position: relative; */
-    /* top: -20px; */
-    /* left: -20px; */
-    /* background-size: cover; */
-    /* width: 90%; */
-    /* height: 80%; */
 }
 .img-responsive_anunc {
     /* display: block; */
@@ -287,7 +278,7 @@
 }
 
 /* Estilo texto de fondo de Registro y Planificador aprendices */
-#Registrarse .heading .subtle-text, #Planificador .heading .subtle-text{
+#Registrarse .heading .subtle-text, #Planificador .heading .subtle-text, #Admin_anuncios .heading .subtle-text, #Admin_anuncios_edit .heading .subtle-text, #Admin_usuarios .heading .subtle-text, #Admin_usuarios_edit .heading .subtle-text{
     bottom: -1.6em;
     font-size: 140px;
 }
@@ -308,17 +299,17 @@
 
 /* Ancho de página de anuncios a aplicar según dimensiones pantalla */
 @media (min-width: 768px) {
-    #Anuncios .container, #Apre_Inst .container {
+    #Anuncios .container, #Apre_Inst_Admin .container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-    #Anuncios .container, #Apre_Inst .container {
+    #Anuncios .container, #Apre_Inst_Admin .container {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-    #Anuncios .container, #Apre_Inst .container {
+    #Anuncios .container, #Apre_Inst_Admin .container {
     width: 1170px;
   }
 }
@@ -361,12 +352,12 @@
 }
 
 /* ancho para contenedores de anuncios y recomendaciones */
-#Anuncios .col-md-6, #Recomendaciones .col-md-6, #Apre_Inst .col-md-6 {
+#Anuncios .col-md-6, #Recomendaciones .col-md-6, #Apre_Inst_Admin .col-md-6 {
     width: 50%;
 }
 /* ancho contenedores según dimensiones pantalla */
 @media (min-width: 992px) {
-    #Anuncios .col-md-6, #Recomendaciones .col-md-6, #Apre_Inst .col-md-6, .col-md-12 {
+    #Anuncios .col-md-6, #Recomendaciones .col-md-6, #Apre_Inst_Admin .col-md-6, .col-md-12 {
       float: left;
     }
 }
@@ -382,7 +373,7 @@
     color: #757575;
 }
 /* Estilo de los textos de fondo de la páginas planificador y asistencia */
-#Planificador .heading .subtle-text, #Asistencia .heading .subtle-text{
+#Planificador .heading .subtle-text, #Asistencia .heading .subtle-text, #Admin_anuncios .heading .subtle-text{
     bottom: -1.5em;
     font-size: 135px;
 }
@@ -443,12 +434,12 @@
 
 /* Estilos y organización aplicada a los datos que llenan los usuarios
     (dandoles espacios más estáticos y además flexibles a las personas que interactuen con los input del sistema) */
-#nom1, #nom2, #apel1, #apel2,  #correo_sena_registro, #num_identificacion, #password_registro, #Antecedentes_input, #correo_sena_iniciosesion, #password_iniciosesion, #correo_sena_Recup_contra{
+#nom1, #nom2, #apel1, #apel2,  #correo_sena_registro, #num_identificacion, #password_registro, #Antecedentes_input, #correo_sena_iniciosesion, #password_iniciosesion, #correo_sena_Recup_contra, #img_anunc, #titulo_anunc, #desc_anunc, #correo_sena_usersEdit{
     margin: 0 auto;
     width: 40%;
 }
 /* Se agrega color más suave al texto que la persona digitará según corresponda */
-#num_identificacion ,#correo_sena_registro, #correo_sena_iniciosesion, #correo_sena_Recup_contra, #Antecedentes_input{
+#num_identificacion ,#correo_sena_registro, #correo_sena_iniciosesion, #correo_sena_Recup_contra, #Antecedentes_input, #correo_sena_usersEdit{
     color: #555555;
 }
 
@@ -458,7 +449,7 @@
 }
 
 /* Estilos que se agregan a los espacios que permiten la elección de opciones en el formulario de registro */
-#selAntecedentes, #selRol{
+#selAntecedentes, #selRol, #estado_user{
     margin: 0 auto;
     width: 41%;
     height: 43px;
@@ -468,7 +459,7 @@
     (esto con el objetivo de que se diferencie y salga de color claro el título que dice "Tiene condicioines médicas que debamos conocer?"
       para que así, cuando se seleccione la opcion, salga de un color más oscuro y se diferencie visualmente del elemento
         que le permite a la persona saber qué elegir en ese espacio opcional) */
-#selAntecedentes:invalid, #selRol:invalid{
+#selAntecedentes:invalid, #selRol:invalid, #estado_user:invalid{
     color: #999;
 }
 
@@ -529,11 +520,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* Padding aplicado al título de las páginas de bienvenida a cada tipo de cliente (a la página de aprendices y a la página de instructores) */
-#Apre_Inst .heading h1 {
+#Apre_Inst_Admin .heading h1 {
     padding-bottom: 40px;
 }
 /* Línea inferior a título y subtitulo heading página aprendiz y página instructores*/
-#Apre_Inst .heading h1:after{
+#Apre_Inst_Admin .heading h1:after{
     bottom: 0;
     left: 50%;
     margin-left: -36px;
@@ -544,7 +535,7 @@ input[type=number]::-webkit-outer-spin-button {
     background: #7ED321;
 }
 /* Estilo texto de fondo de presentación en página aprendiz y página instructores */
-#Apre_Inst .heading .subtle-text {
+#Apre_Inst_Admin .heading .subtle-text {
     top: 0.1em;
     font-size: 140px;
 }
@@ -675,8 +666,6 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 14px;
     border-collapse: collapse;
 }
-
-
 #lista_asistencia .col{
     border: 1px solid white;
     border-bottom-color: #000000;
@@ -685,13 +674,13 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 14px 6px;
     text-align: start;
 }
-#lista_asistencia th:nth-child(6), #lista_asistencia th:nth-child(10){
+#lista_asistencia .asist_correo, #lista_asistencia .asist_acciones{
     text-align: center;
 }
 #lista_asistencia th{
     padding: 2px 20px 2px 7px;
 }
-#lista_asistencia th:nth-child(6){
+#lista_asistencia .asist_correo{
     padding: 2px 8px;
 }
 .tds{
@@ -764,6 +753,31 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: rgb(238, 70, 70);
 }
 
+
+/* Estilos aplicados a lista de anuncios mostrada a administradores */
+#lista{
+    margin: 0 auto;
+    width: 700px;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+#lista .col{
+    border: 1px solid white;
+    border-bottom-color: #000000;
+}
+#lista th, #lista td{
+    padding: 14px 6px;
+    text-align: start;
+}
+#lista .admin_anunc_imagenes, #lista .admin_anunc_acciones{
+    text-align: center;
+}
+#lista th{
+    padding: 2px 20px 2px 7px;
+}
+#lista .img_anunc_admin{
+    width: 120px;
+}
 
 /* pie de cada página */
 #footer {
