@@ -165,18 +165,18 @@ insert into usuarios values
 (1039294831,3,"Valentina", "Lizeth", "Rodriguez", "Perez", "valentperez03@soy.sena.edu.co", "456", 'Enfermedad cronica','', 1),
 (1039387284,2,"Lucas", NULL, "Sanchez", "Lopez", "lopluc_22@soy.sena.edu.co", "abc123", 'Ninguna', '', 0),
 (1034938112,3,"Stefany", "Alexandra", "Moreno", "Hernandez", "stefmhern@soy.sena.edu.co", "s11", 'Diabetes', "Factura de codo", 1),
-(1043817344,3,"Maria", "Tatiana", "Cubidez", "Rios", "mari_cub01@soy.sena.edu.co", "789", 'Ninguna', '', 0);
+(1043817344,1,"Maria", "Tatiana", "Cubidez", "Rios", "mari_cub01@soy.sena.edu.co", "789", 'Ninguna', '', 1);
 
 insert into anuncios values
-(NULL, 1, "Ten en cuenta", "Por situaciones adversas, el gimnasio no estará disponible en las mañanas hasta nuevo aviso. Pedimos excusas por esta situación. Gracias.", "cinco.jpg",1),
-(NULL, 1, "Recuerda...", "Estamos disponibles de 6am a 8pm (sugeto a cambios).", "principal.jpg",1),
-(NULL, 1, "Si", "Estamos disponibles de 6am a 8pm (sugeto a cambios).", "cuatro.jpg",1);
+(NULL, 1043817344, "Ten en cuenta", "Por situaciones adversas, el gimnasio no estará disponible en las mañanas hasta nuevo aviso. Pedimos excusas por esta situación. Gracias.", "cinco.jpg",1),
+(NULL, 1043817344, "Recuerda...", "Estamos disponibles de 6am a 8pm (sugeto a cambios).", "principal.jpg",1),
+(NULL, 1043817344, "Si", "Estamos disponibles de 6am a 8pm (sugeto a cambios).", "cuatro.jpg",1);
 
 insert into asistencia values
 (NULL,1039294831,1203984002,"2022-10-10", 1),
 (NULL,1039294831,1093498551,"2022-10-18", 0),
-(NULL,1043817344,1093498551,"2023-02-10", 1),
-(NULL,1043817344,1039387284,"2023-02-11", 0),
+(NULL,1034938112,1093498551,"2023-02-10", 1),
+(NULL,1034938112,1039387284,"2023-02-11", 0),
 (NULL,1039294831,1203984002,"2023-02-12", 0),
 (NULL,1034938112,1039387284,"2023-02-12", 1),
 (NULL,1039294831,1203984002,"2023-02-13", 1),
@@ -262,13 +262,13 @@ on musculo=pkfk_musculo;
 -- Subconsulta
 
 select * from usuarios
-where fk_tipo_user=2 AND id_user NOT IN
+where fk_tipo_user=3 AND id_user NOT IN
   (select fk_id_aprend
   from planificador);
 
 -- Edición registros
 
-UPDATE usuarios SET fk_tipo_user = 2 WHERE id_user = 1203984002;
+UPDATE usuarios SET fk_tipo_user = 3 WHERE id_user = 1203984002;
   select * from usuarios WHERE id_user = 1203984002;
 
 
@@ -285,7 +285,7 @@ DELETE FROM asistencia WHERE id_registro_asis=8;
 
 -- Seguridad en datos
 insert into usuarios values
-(1099288928,1,"Juanito", NULL, "Lopez", "Mesa", "juan391a@soy.sena.edu.co", MD5("123"),'Asma', '');
+(1099288928,1,"Juanito", NULL, "Lopez", "Mesa", "juan391a@soy.sena.edu.co", MD5("123"),'Asma', '', 1);
 select * from usuarios WHERE id_user = 1099288928;
 
 

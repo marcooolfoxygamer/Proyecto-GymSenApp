@@ -1,0 +1,804 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="description" content="DBDesigner4 HTML Report">
+  <title>DBDesigner4 HTML Report</title>
+  <style>
+/* Links defaults */
+
+a {color:#000000; text-decoration: underline;}
+a:hover { text-decoration: none; color: #ff0000; text-decoration: underline}
+
+/* Scrollers */
+body, textarea {
+  scrollbar-base-color:#eeeeee;
+  scrollbar-3dlight-color:#62708A;
+  scrollbar-arrow-color:#62708A;
+  scrollbar-darkshadow-color:#000000;
+  scrollbar-face-color:#eeeeee;
+  scrollbar-highlight-color:#ffffff;
+  scrollbar-shadow-color:#aaaaaa;
+  scrollbar-track-color:#eeeeee;}
+
+/* NoMargins */
+body { margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px }
+
+/* General Font */
+div, p, td {font-family: Tahoma, Verdana, Arial, MS Sans Serif; color: black; font-size: 11px}
+
+/* Fonts */
+.fontNB {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 11px; font-weight: 700}
+.fontL {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 12px}
+.fontX {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 14px; font-weight: 700}
+.fontXB {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 16px; font-weight: 700}
+.fontS {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 10px; font-weight: 500}
+.fontSB {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 10px; font-weight: 700}
+
+  </style>
+</head>
+
+<body>
+
+<p class="fontX">Database Model plugin_tmp.xml<hr></p>
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">anteced_salud
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>antecedente</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>VARCHAR(80)</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"> Campo Alfanumérico que describe qué antecedentes de salud puede tener un usuario, que le impidan desarrollar algunos ejercicios en el gimnasio. Acepta un máximo de 80 caracteres. Es la llave primaria de la tabla.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">antecedente<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">anuncios
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>id_anunc</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo numérico que permite identificar individualmente cada anuncio que contenga el sistema. Solamente acepta números y es de tipo autoincrementable. Es la llave primaria de la tabla.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">usuarios_id_user</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">BIGINT</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo numérico que permite enlazar al cliente con su rol de administrador cuando sea el caso, uniéndolo mediante su identificación de cliente a través de una llave foránea. Esto con el objetivo de asociar su identificación con el anuncio creado. Solamente acepta números.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">titulo_anunc</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(60)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite darle un título al anuncio al que se hace referencia con el campo id_anunc. Acepta un máximo de 60 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">desc_anunc</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite darle una descripción al anuncio al que se hace referencia con el campo id_anunc. Acepta un máximo de 255 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">img_anunc</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite almacenar el nombre con el que se guardó una imágen que se asociará al anuncio al que se hace referencia con el campo id_anunc. Acepta un máximo de 255 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">estado_anunc</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">BOOL</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo numérico que permite identificar el estado del anuncio dentro el sistema. Solamente acepta números.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">id_anunc<br></td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">anuncios_FKIndex1</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">usuarios_id_user<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">asistencia
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>id_registro_asis</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo numérico que permite identificar con un id el registro que se está llevando a cabo. Solamente acepta números y es de tipo autoincrementable. Es la llave primaria de la tabla.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">id_instruc_asis</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">BIGINT</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"> Campo numérico que permite capturar el número de identificación del instructor que está llenando la asistencia. Solamente acepta números.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">usuarios_id_user</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">BIGINT</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"> Campo numérico que permite enlazar al aprendiz al que se le esté tomando la asistencia, uniéndolo mediante su identificación de cliente a través de una llave foránea. Solamente acepta números.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">fecha_asis</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DATE</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo de formato fecha que permite almacenar la fecha en la que el registro se lleve a cabo. Acepta una fecha con su correspondiente formato de tipo fecha.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">estado_asis</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">BOOL</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo numérico que permite identificar el estado del registro de asistencia dentro el sistema. Solamente acepta números.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">id_registro_asis<br></td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">asistencia_FKIndex1</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">usuarios_id_user<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">ejercicios
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>ejercicio</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>VARCHAR(30)</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite identificar los ejercicios que los aprendices pueden desarrollar en el gimnasio. Acepta un máximo de 30 caracteres. Es la llave primaria de la tabla.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">imagen_ejerc</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite almacenar el nombre con el que se guardó una imágen que se asociará al ejercicio al que se hace referencia con el campo ejercicio. Acepta un máximo de 255 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ejercicio<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">musculos
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>musculo</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>VARCHAR(30)</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite identificar los músculos que los aprendices pueden entrenar en el gimnasio. Acepta un máximo de 30 caracteres. Es la llave primaria de la tabla.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">musculo<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">musculos_ejercicios
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>musculos_musculo</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>VARCHAR(30)</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite relacionar los músculos que el cliente puede elegir y trabajar en el gimnasio, con los ejercicios que para este objetivo alcanzar hay que desarrollar. Campo venido como llave foránea. Llave compuesta de la tabla. Acepta un máximo de 30 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>ejercicios_ejercicio</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>VARCHAR(30)</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite relacionar los ejercicios que el cliente puede desarrollar para entrenar el músculo elegido (se muestran las relaciones entre músculos y ejercicios mediante las relaciones entre los respectivos campos primarios de cada músculo y cada ejercicio). Campo venido como llave foránea. Llave compuesta de la tabla. Acepta un máximo de 30 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">musculos_musculo<br>ejercicios_ejercicio<br></td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">musculos_has_ejercicios_FKIndex1</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">musculos_musculo<br></td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">musculos_has_ejercicios_FKIndex2</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ejercicios_ejercicio<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">planificador
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>id_reg_planif</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo numérico que permite identificar con un código la relación que se dará y registrará entre los aprendices y los músculos que elijan para entrenar en el gimnasio. Solamente acepta números y es de tipo autoincrementable. Es la llave primaria de la tabla.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">usuarios_id_user</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">BIGINT</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo numérico que permite enlazar al aprendiz con los músculos que puede elegir para entrenar en el gimnasio, uniéndolo mediante su identificación de cliente a través de una llave foránea. Solamente acepta números.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">musculos_musculo</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(30)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"> Campo alfanumérico que permite enlazar los músculos que cada aprendiz puede elegir dentro del sistema, campo venido como llave foránea. Acepta un máximo de 30 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">id_reg_planif<br></td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">planif_FKIndex2</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">musculos_musculo<br></td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">planificador_FKIndex2</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">usuarios_id_user<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">tipos_usuarios
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>cod_tipo_user</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo numérico que permite identificar el tipo de usuario o rol con el que el cliente interactuará con el sistema. Solamente acepta números. Es la llave primaria de la tabla.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">tipo_user</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(15)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"> Campo alfanumérico que permite identificar el rol o tipo de usuario al que se hace referencia con el campo cod_tipo_user. Acepta un máximo de 15 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">cod_tipo_user<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">usuarios
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>id_user</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>BIGINT</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo numérico que permite capturar el número de identificación de un cliente. Solamente acepta números. Es la llave primaria de la tabla.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">tipos_usuarios_cod_tipo_user</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo numérico que permite identificar el tipo de usuario o rol con el que el cliente interactuará con el sistema, código venido como llave foránea. Solamente acepta números.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">nom1_user</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(30)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite almacenar el primer nombre de un cliente. Acepta un máximo de 30 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">nom2_user</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(30)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite almacenar el segundo nombre de un cliente. Acepta un máximo de 30 caracteres. NO es obligatorio.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ape1_user</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(30)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite almacenar el primer apellido de un cliente. Acepta un máximo de 30 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ape2_user</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(30)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite almacenar el segundo apellido de un cliente. Acepta un máximo de 30 caracteres. NO es obligatorio.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">correo_sena_user</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(80)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite almacenar el correo de dominio SENA de un cliente. Acepta un máximo de 80 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">contrasena</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(80)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite almacenar la contraseña de la cuenta de un cliente. Acepta un máximo de 80 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">anteced_salud_antecedente</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(80)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que le permite al aprendiz escoger qué antecedentes de salud tiene, que le impidan desarrollar algunos ejercicios en el gimnasio, a través de una llave foránea. Acepta un máximo de 80 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">anteced_salud_inp</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que le permite al aprendiz describir qué antecedentes de salud tiene, que le impidan desarrollar algunos ejercicios en el gimnasio. Acepta un máximo de 255 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">estado_user</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">BOOL</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo numérico que permite identificar el estado del usuario dentro el sistema. Solamente acepta números.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">id_user<br></td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">usuarios_FKIndex1</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">tipos_usuarios_cod_tipo_user<br></td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">usuarios_FKIndex2</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">Index</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">anteced_salud_antecedente<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+</body>
+
+</html>
