@@ -1,0 +1,5 @@
+El link con el proyecto ahora en Angular y consumiendo una api con NodeJS se encuentra en:
+https://github.com/marcooolfoxygamer/gsa_Ang_Node
+
+El link de una api para el proyecto diseñada con Python Flask (también funcional) se encuentra en:
+https://github.com/marcooolfoxygamer/gsa_api_python
