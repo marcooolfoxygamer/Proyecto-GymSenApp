@@ -1,0 +1,9 @@
+El link con el frontend web del proyecto se encuentra en:
+https://github.com/marcooolfoxygamer/frontend_web_GSA
+
+El link con el frontend movil del proyecto se encuentra en:
+https://github.com/marcooolfoxygamer/frontend_movil_GSA
+
+El link con el backend del proyecto se encuentra en:
+https://github.com/marcooolfoxygamer/backend_GSA
+
