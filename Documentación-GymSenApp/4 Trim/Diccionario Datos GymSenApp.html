@@ -321,12 +321,12 @@ div, p, td {font-family: Tahoma, Verdana, Arial, MS Sans Serif; color: black; fo
         </tr>
         <tr>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>ejercicio</b></td>
-          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>VARCHAR(30)</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>VARCHAR(100)</b></td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
-          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite identificar los ejercicios que los aprendices pueden desarrollar en el gimnasio. Acepta un máximo de 30 caracteres. Es la llave primaria de la tabla.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite identificar los ejercicios que los aprendices pueden desarrollar en el gimnasio. Acepta un máximo de 100 caracteres. Es la llave primaria de la tabla.</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
         </tr>
         <tr>
@@ -384,12 +384,12 @@ div, p, td {font-family: Tahoma, Verdana, Arial, MS Sans Serif; color: black; fo
         </tr>
         <tr>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>musculo</b></td>
-          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>VARCHAR(30)</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>VARCHAR(50)</b></td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
-          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite identificar los músculos que los aprendices pueden entrenar en el gimnasio. Acepta un máximo de 30 caracteres. Es la llave primaria de la tabla.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite identificar los músculos que los aprendices pueden entrenar en el gimnasio. Acepta un máximo de 50 caracteres. Es la llave primaria de la tabla.</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
         </tr>
 
@@ -437,22 +437,22 @@ div, p, td {font-family: Tahoma, Verdana, Arial, MS Sans Serif; color: black; fo
         </tr>
         <tr>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>musculos_musculo</b></td>
-          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>VARCHAR(30)</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>VARCHAR(50)</b></td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
-          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite relacionar los músculos que el cliente puede elegir y trabajar en el gimnasio, con los ejercicios que para este objetivo alcanzar hay que desarrollar. Campo venido como llave foránea. Llave compuesta de la tabla. Acepta un máximo de 30 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite relacionar los músculos que el cliente puede elegir y trabajar en el gimnasio, con los ejercicios que para este objetivo alcanzar hay que desarrollar. Campo venido como llave foránea. Llave compuesta de la tabla. Acepta un máximo de 50 caracteres.</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
         </tr>
         <tr>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>ejercicios_ejercicio</b></td>
-          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>VARCHAR(30)</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>VARCHAR(100)</b></td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
-          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite relacionar los ejercicios que el cliente puede desarrollar para entrenar el músculo elegido (se muestran las relaciones entre músculos y ejercicios mediante las relaciones entre los respectivos campos primarios de cada músculo y cada ejercicio). Campo venido como llave foránea. Llave compuesta de la tabla. Acepta un máximo de 30 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Campo alfanumérico que permite relacionar los ejercicios que el cliente puede desarrollar para entrenar el músculo elegido (se muestran las relaciones entre músculos y ejercicios mediante las relaciones entre los respectivos campos primarios de cada músculo y cada ejercicio). Campo venido como llave foránea. Llave compuesta de la tabla. Acepta un máximo de 100 caracteres.</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
         </tr>
 
@@ -530,12 +530,12 @@ div, p, td {font-family: Tahoma, Verdana, Arial, MS Sans Serif; color: black; fo
         </tr>
         <tr>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">musculos_musculo</td>
-          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(30)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(50)</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
-          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"> Campo alfanumérico que permite enlazar los músculos que cada aprendiz puede elegir dentro del sistema, campo venido como llave foránea. Acepta un máximo de 30 caracteres.</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"> Campo alfanumérico que permite enlazar los músculos que cada aprendiz puede elegir dentro del sistema, campo venido como llave foránea. Acepta un máximo de 50 caracteres.</td>
           <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
         </tr>
 

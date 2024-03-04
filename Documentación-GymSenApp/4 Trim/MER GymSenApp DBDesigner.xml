@@ -262,7 +262,7 @@
 <TABLES>
 <TABLE ID="1154" Tablename="musculos" PrevTableName="Table_01" XPos="906" YPos="387" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="1024" OrderPos="7" >
 <COLUMNS>
-<COLUMN ID="1028" ColName="musculo" PrevColName="MUSCULO" Pos="1" idDatatype="20" DatatypeParams="(30)" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="Campo alfanum\233rico que permite identificar los m\250sculos que los aprendices pueden entrenar en el gimnasio. Acepta un m\225ximo de 30 caracteres. Es la llave primaria de la tabla.">
+<COLUMN ID="1028" ColName="musculo" PrevColName="MUSCULO" Pos="1" idDatatype="20" DatatypeParams="(50)" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="Campo alfanum\233rico que permite identificar los m\250sculos que los aprendices pueden entrenar en el gimnasio. Acepta un m\225ximo de 50 caracteres. Es la llave primaria de la tabla.">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
@@ -282,7 +282,7 @@
 </TABLE>
 <TABLE ID="1155" Tablename="ejercicios" PrevTableName="Table_02" XPos="887" YPos="497" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="1029" OrderPos="8" >
 <COLUMNS>
-<COLUMN ID="1033" ColName="ejercicio" PrevColName="EJERCICIO" Pos="1" idDatatype="20" DatatypeParams="(30)" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="Campo alfanum\233rico que permite identificar los ejercicios que los aprendices pueden desarrollar en el gimnasio. Acepta un m\225ximo de 30 caracteres. Es la llave primaria de la tabla.">
+<COLUMN ID="1033" ColName="ejercicio" PrevColName="EJERCICIO" Pos="1" idDatatype="20" DatatypeParams="(100)" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="Campo alfanum\233rico que permite identificar los ejercicios que los aprendices pueden desarrollar en el gimnasio. Acepta un m\225ximo de 100 caracteres. Es la llave primaria de la tabla.">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
@@ -351,12 +351,12 @@
 </TABLE>
 <TABLE ID="1806" Tablename="musculos_ejercicios" PrevTableName="musculos_has_ejercicios" XPos="1144" YPos="408" TableType="0" TablePrefix="0" nmTable="1" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="14" >
 <COLUMNS>
-<COLUMN ID="2057" ColName="musculos_musculo" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(30)" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="Campo alfanum\233rico que permite relacionar los m\250sculos que el cliente puede elegir y trabajar en el gimnasio, con los ejercicios que para este objetivo alcanzar hay que desarrollar. Campo venido como llave for\225nea. Llave compuesta de la tabla. Acepta un m\225ximo de 30 caracteres.">
+<COLUMN ID="2057" ColName="musculos_musculo" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(50)" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="Campo alfanum\233rico que permite relacionar los m\250sculos que el cliente puede elegir y trabajar en el gimnasio, con los ejercicios que para este objetivo alcanzar hay que desarrollar. Campo venido como llave for\225nea. Llave compuesta de la tabla. Acepta un m\225ximo de 50 caracteres.">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="2089" ColName="ejercicios_ejercicio" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(30)" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="Campo alfanum\233rico que permite relacionar los ejercicios que el cliente puede desarrollar para entrenar el m\250sculo elegido (se muestran las relaciones entre m\250sculos y ejercicios mediante las relaciones entre los respectivos campos primarios de cada m\250sculo y cada ejercicio). Campo venido como llave for\225nea. Llave compuesta de la tabla. Acepta un m\225ximo de 30 caracteres.">
+<COLUMN ID="2089" ColName="ejercicios_ejercicio" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(100)" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="Campo alfanum\233rico que permite relacionar los ejercicios que el cliente puede desarrollar para entrenar el m\250sculo elegido (se muestran las relaciones entre m\250sculos y ejercicios mediante las relaciones entre los respectivos campos primarios de cada m\250sculo y cada ejercicio). Campo venido como llave for\225nea. Llave compuesta de la tabla. Acepta un m\225ximo de 100 caracteres.">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
@@ -485,7 +485,7 @@
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="2058" ColName="musculos_musculo" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(30)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments=" Campo alfanum\233rico que permite enlazar los m\250sculos que cada aprendiz puede elegir dentro del sistema, campo venido como llave for\225nea. Acepta un m\225ximo de 30 caracteres.">
+<COLUMN ID="2058" ColName="musculos_musculo" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(50)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments=" Campo alfanum\233rico que permite enlazar los m\250sculos que cada aprendiz puede elegir dentro del sistema, campo venido como llave for\225nea. Acepta un m\225ximo de 50 caracteres.">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
