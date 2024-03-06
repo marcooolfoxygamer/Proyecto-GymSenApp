@@ -1,0 +1,31 @@
+﻿id_user;fk_tipo_user;nom1_user;nom2_user;ape1_user;ape2_user;correo_sena_user;contrasena;fk_anteced_salud_sel;anteced_salud_inp;estado_user
+1022667825;1;Juan;;Vásquez;Flores;jsvf123@soy.sena.edu.co;jj93638.2;Ninguna;;1
+1198527199;3;Miguel;;Hortúa;Castaño;miguel_hc04@soy.sena.edu.co;ih2930yomime;Ninguna;;1
+679087590;3;Camila;;Piamba;Torres;camilap6790@misena.edu.co;calpi,34,32;Ninguna;;1
+696782561;2;Lina;María;Rojas;Díaz;lina_mar@soy.sena.edu.co;maroj.diaz;Artritis;Diabetes;1
+1098723728;2;Luciana;;Trespalacios;;luciana_tresp1028@soy.sena.edu.co;sena123;Enfermedad cardiovascular;;0
+20905189;1;Pablo;;Charcos;;pablocharcos2020@misena.edu.co;cam12_kfj;Ninguna;;1
+47889648;2;Dana;Valentina;Sánchez;Marín;dana_valensg48@soy.sena.edu.co;valen23sgdf;Ninguna;Sufro de calambres en las piernas;1
+728872390;2;Lucas;Manuel;Fernández;Contreras;lucasmanuel2390@soy.sena.edu.co;lucy29372_ñeñe;Enfermedad cronica;;1
+58976998;2;Lilith;;Santana;Gómez;lilmune@misena.edu.co;ll584463_cale;Artritis;Hace dos semanas sufrí un accidente y me recomendaron hacer ejercicio;1
+45788115;1;Claudio;;Lara;Rozo;claudiolara115@sena.edu.co;misena..ssc;Ninguna;;1
+1026789272;3;Carlos;;Martínez;Mendoza;carlosmm12@soy.sena.edu.co;c0ntras3na244;Ninguna;;1
+717558657;2;Camila;Fernanda;Castro;Soto;cami_f8657@soy.sena.edu.co;sen22fmg;Enfermedad pulmonar;;1
+407657432;2;Manuela;;Silva;Beltrán;manuela4076@sena.edu.co;alv_cmt,stf2340;Enfermedad cardiovascular;Operación reciente de rodilla;1
+1186528929;2;Samuel;;López;Obrador;samulopez11@soy.sena.edu.co;111samusd;Enfermedad cronica;;1
+1073972462;2;Sandra;Patricia;Zafra;González;sandrazafra02@soy.sena.edu.co;haha4you;Asma;Sufro del corazón y aveces me desmayo;0
+1086736293;2;Fernando;;Parra;Forero;fernparra@sena.edu.co;20020819ff;Artritis;;1
+1209836722;1;Mina;;Castaño;Simbaqueba;mina_cast@soy.sena.edu.co;mim12094;Ninguna;;0
+57835681;2;Graciela;;Ortíz;Durán;gracielao_026@soy.sena.edu.co;grhac.idd2948;Diabetes;Artritis;1
+1208682762;1;Luz;;Rios;Velandia;luz_r_1254@soy.sena.edu.co;riosb-120868;Ninguna;;1
+1299639261;2;Hernesto;;Gómez;;hernestog5937@misena.edu.co;gher.2939d;Ninguna;Problemas de espalda;1
+1029873954;2;Laura;;Sepúlveda;Castillo;lara_sep@soy.sena.edu.co;1029lauruf;Enfermedad cardiovascular;Fractura en el tendón izquierdo de la mano derecha;0
+1189753272;1;Erika;;Pérez;Sanabria;erika_perez1189@misena.edu.co;pcld_dlfk23;Artritis;;1
+1082683501;2;Pepa;;López;Chaparro;pepa_lo_584@soy.sena.edu.co;ppdl3033;Enfermedad cardiovascular;;1
+1072579852;1;Geraldine;;Rasputín;;geral_gms@soy.sena.edu.co;9935pprj2;Ninguna;;0
+67992537;3;Claudia;Samanta;García;Gómez;claudiag67_37@soy.sena.edu.co;caludita2342;Asma;;1
+1192278362;1;Jhon;Aldair;Rivera;Espinoza;jldair@misena.edu.co;kkcklpmqk;Ninguna;;1
+1130273682;2;Mario;;Bohórquez;;mario_b82@soy.sena.edu.co;mbjfk_buho25;Diabetes;;1
+68906248;3;Liliana;;Paz;Guerra;liliana_paz6890@soy.sena.edu.co;liilsenacontrasena;Ninguna;;1
+1029378292;3;Andrés;Camilo;Bajonero;Triana;andrescbajonero99@soy.sena.edu.co;sandrak2938;Artritis;;1
+353848565;2;Juliana;;Palacios;Sánchez;julianapalacios3565@soy.sena.edu.co;jps_3538MoM;Ninguna;;1
