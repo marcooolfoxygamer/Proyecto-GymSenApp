@@ -1,0 +1,24 @@
+Repositorios:
+
+El link con el frontend web del proyecto se encuentra en:
+https://github.com/marcooolfoxygamer/frontend_web_GSA
+
+El link con el frontend movil del proyecto se encuentra en:
+https://github.com/marcooolfoxygamer/frontend_movil_GSA
+
+El link con el backend del proyecto se encuentra en:
+https://github.com/marcooolfoxygamer/backend_GSA
+
+
+Despliegue:
+
+El link del aplicativo desplegado es https://gymsenapp.netlify.app/
+
+El link del host del frontend web como servicio es:
+https://www.netlify.com/
+
+El link del host del backend o la API como servicio es:
+https://render.com/
+
+El link del host de la base de datos como servicio es:
+https://heliohost.org/
